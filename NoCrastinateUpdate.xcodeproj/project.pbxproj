@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41056F892366E51E00A57676 /* Folders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41056F882366E51E00A57676 /* Folders.swift */; };
+		41056F8B2366E5D700A57676 /* AddFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41056F8A2366E5D700A57676 /* AddFolder.swift */; };
+		412340CC23838E0600289D68 /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412340CB23838E0600289D68 /* FolderView.swift */; };
+		4142A5342366B42A00C25827 /* ExpandedFlashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */; };
+		414E16DD236AA31300BD0BEF /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E16DC236AA31300BD0BEF /* Notifications.swift */; };
 		419D9904236619FC00E4E6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D9903236619FC00E4E6C9 /* AppDelegate.swift */; };
 		419D9906236619FC00E4E6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D9905236619FC00E4E6C9 /* SceneDelegate.swift */; };
 		419D9908236619FC00E4E6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D9907236619FC00E4E6C9 /* ViewController.swift */; };
@@ -14,6 +19,9 @@
 		419D990D236619FF00E4E6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419D990C236619FF00E4E6C9 /* Assets.xcassets */; };
 		419D9910236619FF00E4E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419D990E236619FF00E4E6C9 /* LaunchScreen.storyboard */; };
 		419D991B236619FF00E4E6C9 /* CleverStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D991A236619FF00E4E6C9 /* CleverStudyTests.swift */; };
+		419D992623661B0400E4E6C9 /* AddFlashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D992523661B0400E4E6C9 /* AddFlashcard.swift */; };
+		41D46C35236BC11000BB3803 /* SetStudyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D46C34236BC11000BB3803 /* SetStudyTimer.swift */; };
+		41D46C37236C335800BB3803 /* Untitled drawing (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 41D46C36236C335700BB3803 /* Untitled drawing (1).png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		419D9900236619FC00E4E6C9 /* CleverStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleverStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41056F882366E51E00A57676 /* Folders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folders.swift; sourceTree = "<group>"; };
+		41056F8A2366E5D700A57676 /* AddFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolder.swift; sourceTree = "<group>"; };
+		412340CB23838E0600289D68 /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedFlashcard.swift; sourceTree = "<group>"; };
+		414E16DC236AA31300BD0BEF /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		419D9900236619FC00E4E6C9 /* NoCrastinateUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoCrastinateUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419D9903236619FC00E4E6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419D9905236619FC00E4E6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		419D9907236619FC00E4E6C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +48,12 @@
 		419D990C236619FF00E4E6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419D990F236619FF00E4E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419D9911236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419D9916236619FF00E4E6C9 /* CleverStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleverStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		419D9916236619FF00E4E6C9 /* NoCrastinateUpdateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoCrastinateUpdateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		419D991A236619FF00E4E6C9 /* CleverStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleverStudyTests.swift; sourceTree = "<group>"; };
 		419D991C236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419D992523661B0400E4E6C9 /* AddFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcard.swift; sourceTree = "<group>"; };
+		41D46C34236BC11000BB3803 /* SetStudyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStudyTimer.swift; sourceTree = "<group>"; };
+		41D46C36236C335700BB3803 /* Untitled drawing (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled drawing (1).png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +77,9 @@
 		419D98F7236619FC00E4E6C9 = {
 			isa = PBXGroup;
 			children = (
-				419D9902236619FC00E4E6C9 /* CleverStudy */,
-				419D9919236619FF00E4E6C9 /* CleverStudyTests */,
+				412340CB23838E0600289D68 /* FolderView.swift */,
+				419D9902236619FC00E4E6C9 /* NoCrastinate */,
+				419D9919236619FF00E4E6C9 /* NoCrastinateTests */,
 				419D9901236619FC00E4E6C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,41 +87,48 @@
 		419D9901236619FC00E4E6C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				419D9900236619FC00E4E6C9 /* CleverStudy.app */,
-				419D9916236619FF00E4E6C9 /* CleverStudyTests.xctest */,
+				419D9900236619FC00E4E6C9 /* NoCrastinateUpdate.app */,
+				419D9916236619FF00E4E6C9 /* NoCrastinateUpdateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		419D9902236619FC00E4E6C9 /* CleverStudy */ = {
+		419D9902236619FC00E4E6C9 /* NoCrastinate */ = {
 			isa = PBXGroup;
 			children = (
+				4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */,
 				419D9903236619FC00E4E6C9 /* AppDelegate.swift */,
 				419D9905236619FC00E4E6C9 /* SceneDelegate.swift */,
+				414E16DC236AA31300BD0BEF /* Notifications.swift */,
 				419D9907236619FC00E4E6C9 /* ViewController.swift */,
+				41D46C34236BC11000BB3803 /* SetStudyTimer.swift */,
 				419D9909236619FC00E4E6C9 /* Main.storyboard */,
+				41056F882366E51E00A57676 /* Folders.swift */,
+				419D992523661B0400E4E6C9 /* AddFlashcard.swift */,
 				419D990C236619FF00E4E6C9 /* Assets.xcassets */,
+				41D46C36236C335700BB3803 /* Untitled drawing (1).png */,
+				41056F8A2366E5D700A57676 /* AddFolder.swift */,
 				419D990E236619FF00E4E6C9 /* LaunchScreen.storyboard */,
 				419D9911236619FF00E4E6C9 /* Info.plist */,
 			);
-			path = CleverStudy;
+			path = NoCrastinate;
 			sourceTree = "<group>";
 		};
-		419D9919236619FF00E4E6C9 /* CleverStudyTests */ = {
+		419D9919236619FF00E4E6C9 /* NoCrastinateTests */ = {
 			isa = PBXGroup;
 			children = (
 				419D991A236619FF00E4E6C9 /* CleverStudyTests.swift */,
 				419D991C236619FF00E4E6C9 /* Info.plist */,
 			);
-			path = CleverStudyTests;
+			path = NoCrastinateTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		419D98FF236619FC00E4E6C9 /* CleverStudy */ = {
+		419D98FF236619FC00E4E6C9 /* NoCrastinateUpdate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "CleverStudy" */;
+			buildConfigurationList = 419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinateUpdate" */;
 			buildPhases = (
 				419D98FC236619FC00E4E6C9 /* Sources */,
 				419D98FD236619FC00E4E6C9 /* Frameworks */,
@@ -114,14 +138,14 @@
 			);
 			dependencies = (
 			);
-			name = CleverStudy;
+			name = NoCrastinateUpdate;
 			productName = CleverStudy;
-			productReference = 419D9900236619FC00E4E6C9 /* CleverStudy.app */;
+			productReference = 419D9900236619FC00E4E6C9 /* NoCrastinateUpdate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		419D9915236619FF00E4E6C9 /* CleverStudyTests */ = {
+		419D9915236619FF00E4E6C9 /* NoCrastinateUpdateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "CleverStudyTests" */;
+			buildConfigurationList = 419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinateUpdateTests" */;
 			buildPhases = (
 				419D9912236619FF00E4E6C9 /* Sources */,
 				419D9913236619FF00E4E6C9 /* Frameworks */,
@@ -132,9 +156,9 @@
 			dependencies = (
 				419D9918236619FF00E4E6C9 /* PBXTargetDependency */,
 			);
-			name = CleverStudyTests;
+			name = NoCrastinateUpdateTests;
 			productName = CleverStudyTests;
-			productReference = 419D9916236619FF00E4E6C9 /* CleverStudyTests.xctest */;
+			productReference = 419D9916236619FF00E4E6C9 /* NoCrastinateUpdateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "CleverStudy" */;
+			buildConfigurationList = 419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "NoCrastinateUpdate" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,8 +193,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				419D98FF236619FC00E4E6C9 /* CleverStudy */,
-				419D9915236619FF00E4E6C9 /* CleverStudyTests */,
+				419D98FF236619FC00E4E6C9 /* NoCrastinateUpdate */,
+				419D9915236619FF00E4E6C9 /* NoCrastinateUpdateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +206,7 @@
 			files = (
 				419D9910236619FF00E4E6C9 /* LaunchScreen.storyboard in Resources */,
 				419D990D236619FF00E4E6C9 /* Assets.xcassets in Resources */,
+				41D46C37236C335800BB3803 /* Untitled drawing (1).png in Resources */,
 				419D990B236619FC00E4E6C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,8 +225,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412340CC23838E0600289D68 /* FolderView.swift in Sources */,
+				414E16DD236AA31300BD0BEF /* Notifications.swift in Sources */,
 				419D9908236619FC00E4E6C9 /* ViewController.swift in Sources */,
+				41056F892366E51E00A57676 /* Folders.swift in Sources */,
+				4142A5342366B42A00C25827 /* ExpandedFlashcard.swift in Sources */,
+				41D46C35236BC11000BB3803 /* SetStudyTimer.swift in Sources */,
+				41056F8B2366E5D700A57676 /* AddFolder.swift in Sources */,
 				419D9904236619FC00E4E6C9 /* AppDelegate.swift in Sources */,
+				419D992623661B0400E4E6C9 /* AddFlashcard.swift in Sources */,
 				419D9906236619FC00E4E6C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		419D9918236619FF00E4E6C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 419D98FF236619FC00E4E6C9 /* CleverStudy */;
+			target = 419D98FF236619FC00E4E6C9 /* NoCrastinateUpdate */;
 			targetProxy = 419D9917236619FF00E4E6C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -363,13 +395,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CleverStudy/Info.plist;
+				DEVELOPMENT_TEAM = HKLQ3NNXMK;
+				INFOPLIST_FILE = "$(SRCROOT)/NoCrastinate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fara.CleverStudy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NoCrastinateUpdate;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,13 +413,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CleverStudy/Info.plist;
+				DEVELOPMENT_TEAM = HKLQ3NNXMK;
+				INFOPLIST_FILE = "$(SRCROOT)/NoCrastinate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fara.CleverStudy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NoCrastinateUpdate;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,7 +443,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleverStudy.app/CleverStudy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoCrastinateUpdate.app/NoCrastinateUpdate";
 			};
 			name = Debug;
 		};
@@ -430,14 +464,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleverStudy.app/CleverStudy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoCrastinateUpdate.app/NoCrastinateUpdate";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "CleverStudy" */ = {
+		419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "NoCrastinateUpdate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419D991D236619FF00E4E6C9 /* Debug */,
@@ -446,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "CleverStudy" */ = {
+		419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinateUpdate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419D9920236619FF00E4E6C9 /* Debug */,
@@ -455,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "CleverStudyTests" */ = {
+		419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinateUpdateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419D9923236619FF00E4E6C9 /* Debug */,
