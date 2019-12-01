@@ -8,6 +8,11 @@
 
 import UIKit
 
+func createTime(){
+    flashcardsDayCreated = UserDefaults.standard.object(forKey: "flashcardDay") as? [Int] ?? []
+    flashcardsMonthCreated = UserDefaults.standard.object(forKey: "flashcardMonth") as? [Int] ?? []
+    flashcardsYearCreated = UserDefaults.standard.object(forKey: "flashcardYear") as? [Int] ?? []
+}
 class AddFolder: UIViewController {
     
     @IBOutlet weak var folderNameText: UITextField!
@@ -38,6 +43,7 @@ class AddFolder: UIViewController {
             UserDefaults.standard.set(flashcardsDayCreated,forKey:"flashcardDay")
             UserDefaults.standard.set(flashcardsMonthCreated,forKey:"flashcardMonth")
             UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
+            createTime()
         }
         dismiss(animated: true, completion: nil)
     }

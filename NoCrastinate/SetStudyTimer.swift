@@ -13,6 +13,8 @@ class SetStudyTimer: UIViewController{
     var minutes = 0
     var sum = 0
     var timer = Timer()
+    var understand = 0
+    var notUnderstand = 0
 
     @IBOutlet weak var introLabel: UILabel!
     @IBOutlet weak var minuteLabel: UILabel!
@@ -33,53 +35,42 @@ class SetStudyTimer: UIViewController{
         let year = calendar.component(.year, from: date)
         let month = calendar.component(.month, from: date)
         let day = calendar.component(.day, from: date)
+        print(flashcardsYearCreated)
+        print(flashcardsMonthCreated)
+        print(flashcardsDayCreated)
+        print(whichFolder)
+        print(flashcardsTerm)
+        print(flashcardsDef)
+        print(remembered)
         let daysCountingYear = (year-flashcardsYearCreated[whichFolder])*365
         let daysCountingMonth = (month-flashcardsMonthCreated[whichFolder])*30
-        
-        let daysSinceCreation = daysCountingYear + daysCountingMonth + (day-flashcardsDayCreated[whichFolder])
+        let daysCountingDay = day-flashcardsDayCreated[whichFolder]
+        let daysSinceCreation = daysCountingYear + daysCountingMonth + daysCountingDay
         print(year)
         print(flashcardsYearCreated[whichFolder])
         print(flashcardsMonthCreated[whichFolder])
         print(String(daysSinceCreation) + "DAYS CREATED")
-        if daysSinceCreation<3{
-            if Int(flashcardsTerm[whichFolder+1].count) >= 40{
-                recTimeLabel.text = "40"
-            }
-            else if Int(flashcardsTerm[whichFolder].count) >= 5{
-                recTimeLabel.text = String(10*(Int(flashcardsTerm[whichFolder].count)/10))
-            }else{
-                recTimeLabel.text = "5"
-            }
-        }
-        else if daysSinceCreation<14{
-            if Int(7*(Int(flashcardsTerm[whichFolder].count)/10)) >= 35{
-                recTimeLabel.text = "35"
-            }
-            else if Int(7*(Int(flashcardsTerm[whichFolder].count)/10)) >= 5{
-                recTimeLabel.text = String(10*(Int(flashcardsTerm[whichFolder].count)/10))
-            }else{
-                recTimeLabel.text = "5"
-            }
-        }
-        else{
-            if Int(5*(Int(flashcardsTerm[whichFolder].count)/10)) >= 30{
-                recTimeLabel.text = "30"
-            }
-            else if Int(5*(Int(flashcardsTerm[whichFolder].count)/10)) >= 5{
-                recTimeLabel.text = String(10*(Int(flashcardsTerm[whichFolder].count)/15))
-            }else{
-                recTimeLabel.text = "5"
-            }
-        }
         for element in remembered[whichFolder]{
             print(String(element) + "ELEMENT")
             print(String(remembered[whichFolder].count) + " COUNT " )
             if element == 1{
                 sum+=1
+                understand+=1
+            }
+            if element == -1{
+                notUnderstand+=1
             }
         }
         print(String(sum) + " SUM")
+        let forgettingCurve = Double(flashcardsTerm[whichFolder].count)-Double(daysSinceCreation)*0.2
+        let proficiency = (1.2*Double(notUnderstand))-((1.3*Double(understand))-1.0)
+        let studyTime = forgettingCurve + proficiency
+        recTimeLabel.text = "\(studyTime)"
+        if flashcardsTerm[whichFolder].count == 0{
+            percentofMasteryLabel.text = "0"
+        }else{
         percentofMasteryLabel.text = String(Int((sum*100)/remembered[whichFolder].count))
+        }
     }
     override func viewDidLoad()
     {

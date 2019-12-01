@@ -27,6 +27,9 @@ func saveData(){
     UserDefaults.standard.set(flashcardsTerm,forKey:"theEventT")
     UserDefaults.standard.set(flashcardsDef,forKey:"theEventD")
     UserDefaults.standard.set(remembered,forKey:"remembered")
+    UserDefaults.standard.set(flashcardsDayCreated,forKey:"flashcardDay")
+    UserDefaults.standard.set(flashcardsMonthCreated,forKey:"flashcardMonth")
+    UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
 }
 
 func createData(){
@@ -35,6 +38,9 @@ func createData(){
     flashcardsDef = UserDefaults.standard.object(forKey: "theEventD") as? [[String]] ?? []
     remembered = UserDefaults.standard.object(forKey: "remembered") as? [[Int]] ?? []
     userDataF = UserDefaults.standard.bool(forKey: "userDataF")
+    flashcardsDayCreated = UserDefaults.standard.object(forKey: "flashcardDay") as? [Int] ?? []
+    flashcardsMonthCreated = UserDefaults.standard.object(forKey: "flashcardMonth") as? [Int] ?? []
+    flashcardsYearCreated = UserDefaults.standard.object(forKey: "flashcardYear") as? [Int] ?? []
 }
 
 class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
