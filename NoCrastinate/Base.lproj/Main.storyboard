@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="V3R-IN-XJT">
+                                    <navigationItem title="Notifications" id="V3R-IN-XJT">
                                         <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="bFj-q8-DkU">
                                             <connections>
                                                 <action selector="cancelButton:" destination="rGK-d8-mhD" id="xaE-B4-HAt"/>
@@ -458,18 +458,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-gf-Ve1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Create a Flashcard!" id="8aQ-Au-ohR">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="zkZ-OD-S7E">
-                                            <connections>
-                                                <action selector="DoneFlashcard:" destination="uo6-Y2-dfM" id="cb2-7Y-YmI"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Term" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLB-Fi-5pk">
                                 <rect key="frame" x="20" y="181" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -488,6 +476,18 @@
                                     <action selector="saveFlashcard:" destination="uo6-Y2-dfM" eventType="touchUpInside" id="8yq-SQ-JtM"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-gf-Ve1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Create a Flashcard!" id="8aQ-Au-ohR">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="zkZ-OD-S7E">
+                                            <connections>
+                                                <action selector="DoneFlashcard:" destination="uo6-Y2-dfM" id="cb2-7Y-YmI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.97598773241043091" green="0.98527473211288452" blue="0.99022156000137329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

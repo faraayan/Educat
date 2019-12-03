@@ -47,7 +47,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidAppear(animated)
         flashcardTable.reloadData()
         saveData()
-        flashcardLabelName.text = foldersName[whichFolder]
         
     }
     
@@ -58,6 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     open override func viewDidLoad() {
         super.viewDidLoad()
+        flashcardLabelName.text = foldersName[whichFolder]
         flashcardTable.backgroundColor = UIColor.lightGray
         userData = UserDefaults.standard.bool(forKey: "userData")
         if heyThere == 1{
