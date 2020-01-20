@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell1 = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell1.textLabel?.text = flashcardsTerm[whichFolder][indexPath.row]
+        cell1.layer.cornerRadius = 20
         colors = []
         for elements in remembered[whichFolder]{
             if elements == 1{
