@@ -15,6 +15,7 @@ class SetStudyTimer: UIViewController{
     var timer = Timer()
     var understand = 0
     var notUnderstand = 0
+    var studyTime = 1.0
 
     @IBOutlet weak var introLabel: UILabel!
     @IBOutlet weak var minuteLabel: UILabel!
@@ -64,7 +65,11 @@ class SetStudyTimer: UIViewController{
         print(String(sum) + " SUM")
         let forgettingCurve = Double(flashcardsTerm[whichFolder].count)-Double(daysSinceCreation)*0.2
         let proficiency = (1.2*Double(notUnderstand))-((1.3*Double(understand))-1.0)
-        let studyTime = forgettingCurve + proficiency
+        if(forgettingCurve + proficiency<0){
+            studyTime = Double(flashcardsTerm[whichFolder].count)*0.2
+        }else{
+            studyTime = forgettingCurve + proficiency
+        }
         recTimeLabel.text = "\(studyTime)"
         if flashcardsTerm[whichFolder].count == 0{
             percentofMasteryLabel.text = "0"
