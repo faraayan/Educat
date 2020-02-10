@@ -27,9 +27,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell1 = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell1.textLabel?.text = flashcardsTerm[whichFolder][indexPath.row]
+<<<<<<< HEAD
         cell1.layer.cornerRadius = 10
         let margins = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
         cell1.frame = cell1.frame.inset(by: margins)
+=======
+        cell1.layer.cornerRadius = 20
+>>>>>>> master
         colors = []
         for elements in remembered[whichFolder]{
             if elements == 1{
