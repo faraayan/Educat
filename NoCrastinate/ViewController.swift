@@ -26,6 +26,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell1 = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        guard let tableFont = UIFont(name: "Avenir-Light", size: 15) else {
+            fatalError("""
+                Failed to load the "CustomFont-Light" font.
+                Make sure the font file is included in the project and the font name is spelled correctly.
+                """
+            )
+        }
+        cell1.textLabel?.font = UIFontMetrics.default.scaledFont(for: tableFont)
         cell1.textLabel?.text = flashcardsTerm[whichFolder][indexPath.row]
         cell1.layer.cornerRadius = 10
         let margins = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
@@ -62,6 +70,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     open override func viewDidLoad() {
         super.viewDidLoad()
+        //avenir title font
+        guard let titleFont = UIFont(name: "Avenir-Heavy", size: 20) else {
+            fatalError("""
+                Failed to load the "CustomFont-Light" font.
+                Make sure the font file is included in the project and the font name is spelled correctly.
+                """
+            )
+        }
+        flashcardLabelName.font = UIFontMetrics.default.scaledFont(for: titleFont)
         //for rounded corners
         flashcardTable.layer.cornerRadius = 20
         flashcardLabelName.text = foldersName[whichFolder]

@@ -65,6 +65,9 @@ class SetStudyTimer: UIViewController{
         print(String(sum) + " SUM")
         let forgettingCurve = Double(flashcardsTerm[whichFolder].count)-Double(daysSinceCreation)*0.2
         let proficiency = (1.2*Double(notUnderstand))-((1.3*Double(understand))-1.0)
+        if(flashcardsTerm.count == 0){
+            studyTime = 0.0
+        }
         if(forgettingCurve + proficiency<0){
             studyTime = Double(flashcardsTerm[whichFolder].count)*0.2
         }else{
