@@ -56,7 +56,7 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell2 = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         foldersName = UserDefaults.standard.object(forKey: foldersNameKey) as! [String]
-        guard let tableFont = UIFont(name: "Avenir-Light", size: 15) else {
+        guard let tableFont = UIFont(name: "Avenir-Light", size: 20) else {
             fatalError("""
                 Failed to load the "CustomFont-Light" font.
                 Make sure the font file is included in the project and the font name is spelled correctly.

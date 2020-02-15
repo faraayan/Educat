@@ -13,8 +13,9 @@ let greenColor = UIColor(red:0.96, green:1.00, blue:0.92, alpha:1.0)
 var heyThere = 0
 var sectionHeaderHeight: CGFloat { 5.0 }
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    @IBOutlet weak var flashcardLabelName: UILabel!
+
     
+    @IBOutlet weak var flashcardLabelName: UILabel!
     @IBOutlet weak var flashcardTable: UITableView!
 
     @IBAction func analytics(_ sender: Any) {
@@ -37,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell1.textLabel?.font = UIFontMetrics.default.scaledFont(for: tableFont)
         cell1.textLabel?.text = flashcardsTerm[whichFolder][indexPath.row]
         cell1.layer.cornerRadius = 10
-        let margins = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+        let margins = UIEdgeInsets(top: 58, left: 0, bottom: 50, right: 0)
         cell1.frame = cell1.frame.inset(by: margins)
 
         cell1.layer.cornerRadius = 20
@@ -72,7 +73,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     open override func viewDidLoad() {
         super.viewDidLoad()
         //avenir title font
-        guard let titleFont = UIFont(name: "Avenir-Heavy", size: 20) else {
+        guard let titleFont = UIFont(name: "Avenir-Heavy", size: 30) else {
             fatalError("""
                 Failed to load the "CustomFont-Light" font.
                 Make sure the font file is included in the project and the font name is spelled correctly.
