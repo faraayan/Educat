@@ -20,6 +20,7 @@ var flashcardsMonthCreated: [Int] = []
 var flashcardsYearCreated: [Int] = []
 var remembered: [[Int]] = []
 var hello = 0
+var folderHeaderHeight: CGFloat { 10.0 }
 let foldersNameKey = "foldersName!"
 
 func saveData(){

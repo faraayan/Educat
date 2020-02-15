@@ -11,6 +11,7 @@ var colors = [UIColor]()
 var redColor = UIColor(red:1.00, green:0.93, blue:0.93, alpha:1.0)
 let greenColor = UIColor(red:0.96, green:1.00, blue:0.92, alpha:1.0)
 var heyThere = 0
+var sectionHeaderHeight: CGFloat { 5.0 }
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var flashcardLabelName: UILabel!
     
