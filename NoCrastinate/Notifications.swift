@@ -12,6 +12,7 @@ var myStringArr = [String()]
 
 class Notifications: UIViewController {
      @IBOutlet weak var studyLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var timeOfNotification: UIDatePicker!
 

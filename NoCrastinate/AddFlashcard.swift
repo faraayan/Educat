@@ -13,6 +13,7 @@ import UIKit
     @IBOutlet weak var termText: UITextField!
     
     @IBOutlet weak var definitionText: UITextField!
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBAction func saveFlashcard(_ sender: Any) {
         userData = true

@@ -15,6 +15,7 @@ func createTime(){
 }
 class AddFolder: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var folderNameText: UITextField!
     
     @IBOutlet weak var saveFolder: UIButton!

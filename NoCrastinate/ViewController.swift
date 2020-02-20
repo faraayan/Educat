@@ -37,11 +37,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         cell1.textLabel?.font = UIFontMetrics.default.scaledFont(for: tableFont)
         cell1.textLabel?.text = flashcardsTerm[whichFolder][indexPath.row]
-        cell1.layer.cornerRadius = 10
         let margins = UIEdgeInsets(top: 58, left: 0, bottom: 50, right: 0)
         cell1.frame = cell1.frame.inset(by: margins)
-
-        cell1.layer.cornerRadius = 20
         colors = []
         for elements in remembered[whichFolder]{
             if elements == 1{
@@ -82,7 +79,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         flashcardLabelName.font = UIFontMetrics.default.scaledFont(for: titleFont)
         //for rounded corners
-        flashcardTable.layer.cornerRadius = 20
         flashcardLabelName.text = foldersName[whichFolder]
         flashcardTable.backgroundColor = UIColor.lightGray
         userData = UserDefaults.standard.bool(forKey: "userData")

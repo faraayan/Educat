@@ -22,6 +22,7 @@ class SetStudyTimer: UIViewController{
     @IBOutlet weak var studyLabel: UILabel!
     @IBOutlet weak var recTimeLabel: UILabel!
     @IBOutlet weak var percentofMasteryLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var percentLabel: UILabel!
     @IBAction func goBack(_ sender: Any) {
