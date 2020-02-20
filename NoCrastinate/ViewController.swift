@@ -78,9 +78,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             )
         }
         flashcardLabelName.font = UIFontMetrics.default.scaledFont(for: titleFont)
-        //for rounded corners
         flashcardLabelName.text = foldersName[whichFolder]
-        flashcardTable.backgroundColor = UIColor.lightGray
         userData = UserDefaults.standard.bool(forKey: "userData")
         if heyThere == 1{
             userDataF = true

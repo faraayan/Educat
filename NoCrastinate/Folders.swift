@@ -85,7 +85,6 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         saveData()
         createData()
-        folderTable.backgroundColor = UIColor.lightGray
         if hello == 1{
             userDataF = true
         }
