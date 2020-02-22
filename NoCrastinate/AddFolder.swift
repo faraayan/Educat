@@ -17,6 +17,7 @@ class AddFolder: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var folderNameText: UITextField!
+    @IBOutlet weak var addFolderNav: UINavigationBar!
     
     @IBOutlet weak var saveFolder: UIButton!
     @IBAction func saveFolder(_ sender: Any) {
@@ -58,3 +59,5 @@ class AddFolder: UIViewController {
         saveFolder.layer.cornerRadius = 8
     }
 }
+
+

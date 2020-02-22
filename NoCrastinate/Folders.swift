@@ -46,7 +46,6 @@ func createData(){
 
 class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    
     @IBOutlet weak var folderTable: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -71,6 +70,7 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         folderTable.reloadData()
+        folderTable.backgroundColor = UIColor.white
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
