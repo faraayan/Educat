@@ -38,8 +38,9 @@ import UIKit
         }
     }
     
-    @IBAction func DoneFlashcard(_ sender: Any) {
-        dismiss(animated: true, completion:nil)
+
+    @IBAction func cancelFlashcard(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

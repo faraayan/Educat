@@ -16,7 +16,8 @@ class Notifications: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var timeOfNotification: UIDatePicker!
 
-    @IBAction func cancelButton(_ sender: Any) {
+
+    @IBAction func cancelNotification(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     

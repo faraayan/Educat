@@ -58,6 +58,7 @@ class AddFolder: UIViewController {
     @IBAction func cancelFolder(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
     }

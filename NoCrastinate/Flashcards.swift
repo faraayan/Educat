@@ -8,7 +8,7 @@
 
 import UIKit
 
-var colors = [UIColor]()
+var symbol = [String]()
 var redColor = UIColor(red:1.00, green:0.93, blue:0.93, alpha:1.0)
 let greenColor = UIColor(red:0.96, green:1.00, blue:0.92, alpha:1.0)
 var heyThere = 0
@@ -44,19 +44,16 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         cell.frame = cell.frame.inset(by: margins)
         
         //Assign corresponding color for each cell
-        colors = []
+        symbol = []
         for elements in remembered[whichFolder]{
             if elements == 1{
-                colors.append(greenColor)
+                symbol.append(" ")
             }
             if elements == -1{
-                colors.append(redColor)
-            }
-            if elements == 0{
-                colors.append(UIColor.white)
+                symbol.append("  •")
             }
         }
-        cell.backgroundColor = colors[indexPath.row % colors.count]
+        cell.textLabel?.text = String(cell.textLabel!.text!) + symbol[indexPath.row % symbol.count]
         
         return cell
     }
@@ -97,9 +94,11 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         flashcardTable.reloadData()
     }
+
     @IBAction func closeFlashcards(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == UITableViewCell.EditingStyle.delete{
