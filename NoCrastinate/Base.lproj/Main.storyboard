@@ -404,7 +404,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="gpO-Nu-vmd">
                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="00Y-PW-KYh" kind="show" id="dLC-mE-XMA"/>
+                                                <action selector="closeFlashcards:" destination="BYZ-38-t0r" id="cdh-JF-DJY"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hns-xq-C0c">
@@ -613,7 +613,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-IF-yTG">
-                                <rect key="frame" x="20" y="213" width="347" height="21"/>
+                                <rect key="frame" x="20" y="214" width="347" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="cow-X7-xnD"/>
                                 </constraints>
@@ -631,19 +631,19 @@
                             <constraint firstItem="eX7-gf-Ve1" firstAttribute="trailing" secondItem="C5j-hG-WWd" secondAttribute="trailing" id="Qp4-9m-CDO"/>
                             <constraint firstItem="TsW-BG-anN" firstAttribute="trailing" secondItem="Oje-IF-yTG" secondAttribute="trailing" constant="-7" id="RBB-AW-60J"/>
                             <constraint firstItem="LRZ-Ja-v8D" firstAttribute="top" secondItem="eX7-gf-Ve1" secondAttribute="bottom" constant="31" id="XRq-sN-iJH"/>
-                            <constraint firstItem="Oje-IF-yTG" firstAttribute="top" secondItem="LRZ-Ja-v8D" secondAttribute="bottom" constant="30" id="Zy5-My-pn2"/>
+                            <constraint firstItem="Oje-IF-yTG" firstAttribute="top" secondItem="LRZ-Ja-v8D" secondAttribute="bottom" constant="31" id="Zy5-My-pn2"/>
                             <constraint firstItem="C5j-hG-WWd" firstAttribute="trailing" secondItem="pLB-Fi-5pk" secondAttribute="trailing" constant="57" id="beX-CT-fzK"/>
                             <constraint firstItem="LRZ-Ja-v8D" firstAttribute="leading" secondItem="tnS-yP-KWd" secondAttribute="leadingMargin" id="cAd-qO-WpE"/>
                             <constraint firstItem="QXc-Js-Pzc" firstAttribute="trailing" secondItem="pLB-Fi-5pk" secondAttribute="trailing" id="csi-Ts-WIw"/>
-                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="45" id="e4d-43-Nhd"/>
+                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="44" id="e4d-43-Nhd"/>
                             <constraint firstItem="BNY-MD-fDG" firstAttribute="top" secondItem="QXc-Js-Pzc" secondAttribute="bottom" constant="88" id="fdl-LM-L66"/>
                             <constraint firstItem="BNY-MD-fDG" firstAttribute="top" secondItem="TsW-BG-anN" secondAttribute="bottom" constant="84" id="lQa-lm-yHy"/>
                             <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="tnS-yP-KWd" secondAttribute="top" constant="279" id="mhc-5t-050"/>
                             <constraint firstItem="BNY-MD-fDG" firstAttribute="centerX" secondItem="eX7-gf-Ve1" secondAttribute="centerX" id="ndN-Ef-TaB"/>
-                            <constraint firstItem="TsW-BG-anN" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="59.5" id="uke-EY-GZh"/>
+                            <constraint firstItem="TsW-BG-anN" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="58.5" id="uke-EY-GZh"/>
                             <constraint firstItem="eX7-gf-Ve1" firstAttribute="top" secondItem="C5j-hG-WWd" secondAttribute="top" id="xSH-V3-HNM"/>
                             <constraint firstItem="QXc-Js-Pzc" firstAttribute="leading" secondItem="TsW-BG-anN" secondAttribute="leading" id="xTG-Zf-ufK"/>
-                            <constraint firstItem="pLB-Fi-5pk" firstAttribute="bottom" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="-2" id="xee-KW-bjI"/>
+                            <constraint firstItem="pLB-Fi-5pk" firstAttribute="bottom" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="-3" id="xee-KW-bjI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C5j-hG-WWd"/>
                     </view>

@@ -95,7 +95,10 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         flashcardTable.reloadData()
     }
-
+    @IBAction func closeFlashcards(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == UITableViewCell.EditingStyle.delete{
                 flashcardsDef[whichFolder].remove(at: indexPath.row)
