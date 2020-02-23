@@ -57,7 +57,7 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell2 = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: nil)
+        let cell = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         foldersName = UserDefaults.standard.object(forKey: foldersNameKey) as! [String]
         guard let tableFont = UIFont(name: "Avenir-Light", size: 20) else {
             fatalError("""
@@ -66,9 +66,10 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 """
             )
         }
-        cell2.textLabel?.font = UIFontMetrics.default.scaledFont(for: tableFont)
-        cell2.textLabel?.text = foldersName[indexPath.row]
-        return cell2
+        cell.textLabel?.font = UIFontMetrics.default.scaledFont(for: tableFont)
+        cell.textLabel?.text = foldersName[indexPath.row]
+        cell.backgroundColor = UIColor(named: "mainColor")
+        return cell
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,7 +84,10 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-        folderTable.backgroundColor = UIColor.white
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    self.navigationController?.navigationBar.layoutIfNeeded()
+        //folderTable.backgroundColor = UIColor.white
         if hello == 0{
             createData()
         }

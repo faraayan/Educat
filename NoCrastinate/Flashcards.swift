@@ -39,6 +39,7 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         cell.textLabel?.font = UIFontMetrics.default.scaledFont(for: tableFont)
         cell.textLabel?.text = flashcardsTerm[whichFolder][indexPath.row]
+        cell.backgroundColor = UIColor(named: "mainColor")
         let margins = UIEdgeInsets(top: 58, left: 0, bottom: 50, right: 0)
         cell.frame = cell.frame.inset(by: margins)
         
@@ -73,6 +74,7 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     open override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         //Set interface for Folder title
         guard let titleFont = UIFont(name: "Avenir-Heavy", size: 30) else {
