@@ -18,9 +18,12 @@ class AddFolder: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var folderNameText: UITextField!
-    @IBOutlet weak var addFolderNav: UINavigationBar!
     @IBOutlet weak var saveFolder: UIButton!
     @IBOutlet weak var underlineBar: UILabel!
+    
+    @IBAction func cancelFolder(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func saveFolder(_ sender: Any) {
         userDataF = true
@@ -29,7 +32,6 @@ class AddFolder: UIViewController, UITextFieldDelegate {
         if folderNameText.text == ""{
             underlineBar.textColor = UIColor.red
         }
-        
         if folderNameText.text != ""{
             underlineBar.textColor = UIColor.black
             foldersName.append(folderNameText.text!)
@@ -54,13 +56,10 @@ class AddFolder: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //Hides keyboard when return key is pressed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         folderNameText.resignFirstResponder()
         return true
-    }
-    
-    @IBAction func cancelFolder(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool){

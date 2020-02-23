@@ -23,8 +23,8 @@ class SetStudyTimer: UIViewController{
     @IBOutlet weak var recTimeLabel: UILabel!
     @IBOutlet weak var percentofMasteryLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var percentLabel: UILabel!
+    
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -37,13 +37,6 @@ class SetStudyTimer: UIViewController{
         let year = calendar.component(.year, from: date)
         let month = calendar.component(.month, from: date)
         let day = calendar.component(.day, from: date)
-        print(flashcardsYearCreated)
-        print(flashcardsMonthCreated)
-        print(flashcardsDayCreated)
-        print(whichFolder)
-        print(flashcardsTerm)
-        print(flashcardsDef)
-        print(remembered)
         let daysCountingYear = (year-flashcardsYearCreated[whichFolder])*365
         let daysCountingMonth = (month-flashcardsMonthCreated[whichFolder])*30
         let daysCountingDay = day-flashcardsDayCreated[whichFolder]
@@ -53,8 +46,6 @@ class SetStudyTimer: UIViewController{
         print(flashcardsMonthCreated[whichFolder])
         print(String(daysSinceCreation) + "DAYS CREATED")
         for element in remembered[whichFolder]{
-            print(String(element) + "ELEMENT")
-            print(String(remembered[whichFolder].count) + " COUNT " )
             if element == 1{
                 sum+=1
                 understand+=1
@@ -76,8 +67,6 @@ class SetStudyTimer: UIViewController{
         }else{
         percentofMasteryLabel.text = String(Int((sum*100)/remembered[whichFolder].count))
         }
-        print("lookit" + String(flashcardsTerm[whichFolder].count))
-        print(flashcardsTerm)
         if(flashcardsTerm[whichFolder].count == 0){
             studyTime = 0.0
         }

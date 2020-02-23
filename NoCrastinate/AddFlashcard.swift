@@ -25,7 +25,6 @@ import UIKit
         if definitionText.text == ""{
             definitionUnderline.textColor = UIColor.red
         }
-        
         if termText.text != "" && definitionText.text != ""{
             termUnderline.textColor = UIColor.black
             definitionUnderline.textColor = UIColor.black
@@ -34,18 +33,18 @@ import UIKit
             remembered[whichFolder].append(0)
             saveData()
             dismiss(animated: true, completion:nil)
-            
         }
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        termText.resignFirstResponder()
-        definitionText.resignFirstResponder()
-        return true
     }
     
     @IBAction func cancelFlashcard(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+
+    //Hides keyboard when return key is pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        termText.resignFirstResponder()
+        definitionText.resignFirstResponder()
+        return true
     }
     
     override func viewDidLoad() {

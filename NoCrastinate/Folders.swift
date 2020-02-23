@@ -54,11 +54,11 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
         return foldersName.count
     }
     
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         foldersName = UserDefaults.standard.object(forKey: foldersNameKey) as! [String]
+        
+        //Adjust folder cell interface
         guard let tableFont = UIFont(name: "Avenir-Light", size: 20) else {
             fatalError("""
                 Failed to load the "CustomFont-Light" font.
@@ -84,10 +84,6 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
-    self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.navigationBar.layoutIfNeeded()
-        //folderTable.backgroundColor = UIColor.white
         if hello == 0{
             createData()
         }
@@ -100,13 +96,6 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
             UserDefaults.standard.set(foldersName, forKey: foldersNameKey)
             hello = 1
         }
-        folderTable.reloadData()
-    }
-    public override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        folderTable.reloadData()
-    }
-    func presentationControllerDidDismiss(_ presentationController: UIPresentationController){
         folderTable.reloadData()
     }
     

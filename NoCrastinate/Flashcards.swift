@@ -9,19 +9,13 @@
 import UIKit
 
 var symbol = [String]()
-var redColor = UIColor(red:1.00, green:0.93, blue:0.93, alpha:1.0)
-let greenColor = UIColor(red:0.96, green:1.00, blue:0.92, alpha:1.0)
-var heyThere = 0
+var isSaved = false
 var sectionHeaderHeight: CGFloat { 5.0 }
 
 class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var flashcardLabelName: UILabel!
     @IBOutlet weak var flashcardTable: UITableView!
-
-    @IBAction func analytics(_ sender: Any) {
-        performSegue(withIdentifier: "analytics", sender: self)
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return flashcardsTerm[whichFolder].count
@@ -43,11 +37,11 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         let margins = UIEdgeInsets(top: 58, left: 0, bottom: 50, right: 0)
         cell.frame = cell.frame.inset(by: margins)
         
-        //Assign corresponding color for each cell
+        //Assign corresponding label for each cell
         symbol = []
         for elements in remembered[whichFolder]{
             if elements == 1{
-                symbol.append("  ")
+                symbol.append(" ")
             }
             else{
                 symbol.append(" •")
@@ -66,12 +60,11 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         whichFlashcard = indexPath.row
-        performSegue(withIdentifier: "segue", sender: self)
+        performSegue(withIdentifier: "openFlashcardSegue", sender: self)
     }
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         //Set interface for Folder title
         guard let titleFont = UIFont(name: "Avenir-Heavy", size: 30) else {
@@ -83,14 +76,13 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         flashcardLabelName.font = UIFontMetrics.default.scaledFont(for: titleFont)
         flashcardLabelName.text = foldersName[whichFolder]
         
-        
         userData = UserDefaults.standard.bool(forKey: "userData")
-        if heyThere == 1{
+        if isSaved == true{
             userDataF = true
         }
         if userData == false{
             saveData()
-            heyThere = 1
+            isSaved = true
         }
         flashcardTable.reloadData()
     }
