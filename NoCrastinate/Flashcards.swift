@@ -46,11 +46,11 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         //Assign corresponding color for each cell
         symbol = []
         for elements in remembered[whichFolder]{
-            if elements == -1{
-                symbol.append("  •")
+            if elements == 1{
+                symbol.append("  ")
             }
             else{
-                symbol.append(" ")
+                symbol.append(" •")
             }
         }
         cell.textLabel?.text = String(cell.textLabel!.text!) + symbol[indexPath.row % symbol.count]

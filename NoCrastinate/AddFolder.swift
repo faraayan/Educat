@@ -14,7 +14,7 @@ func createTime(){
     flashcardsYearCreated = UserDefaults.standard.object(forKey: "flashcardYear") as? [Int] ?? []
 }
 
-class AddFolder: UIViewController {
+class AddFolder: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var folderNameText: UITextField!
@@ -54,6 +54,10 @@ class AddFolder: UIViewController {
         }
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        folderNameText.resignFirstResponder()
+        return true
+    }
     
     @IBAction func cancelFolder(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -65,6 +69,7 @@ class AddFolder: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        folderNameText.delegate = self
         saveFolder.layer.cornerRadius = 8
         folderNameText.borderStyle = UITextField.BorderStyle.none
     }

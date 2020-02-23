@@ -8,7 +8,7 @@
 
 import UIKit
 
- class AddFlashcard: UIViewController {
+ class AddFlashcard: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var termText: UITextField!
     @IBOutlet weak var definitionText: UITextField!
@@ -37,14 +37,21 @@ import UIKit
             
         }
     }
-    
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        termText.resignFirstResponder()
+        definitionText.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func cancelFlashcard(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        termText.delegate = self
+        definitionText.delegate = self
         termText.borderStyle = UITextField.BorderStyle.none
         definitionText.borderStyle = UITextField.BorderStyle.none
      }
