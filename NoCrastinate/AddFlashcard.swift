@@ -11,23 +11,24 @@ import UIKit
  class AddFlashcard: UIViewController {
     
     @IBOutlet weak var termText: UITextField!
-    
     @IBOutlet weak var definitionText: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var termUnderline: UILabel!
+    @IBOutlet weak var definitionUnderline: UILabel!
     
     @IBAction func saveFlashcard(_ sender: Any) {
         userData = true
         UserDefaults.standard.set(userData, forKey:"userData")
         if termText.text == ""{
-            termText.backgroundColor = UIColor.red
+            termUnderline.textColor = UIColor.red
         }
         if definitionText.text == ""{
-            definitionText.backgroundColor = UIColor.red
+            definitionUnderline.textColor = UIColor.red
         }
         
         if termText.text != "" && definitionText.text != ""{
-            termText.backgroundColor = UIColor.white
-            definitionText.backgroundColor = UIColor.white
+            termUnderline.textColor = UIColor.black
+            definitionUnderline.textColor = UIColor.black
             flashcardsDef[whichFolder].append(definitionText.text!)
             flashcardsTerm[whichFolder].append(termText.text!)
             remembered[whichFolder].append(0)
@@ -42,6 +43,8 @@ import UIKit
     }
     
     override func viewDidLoad() {
-         super.viewDidLoad()
+        super.viewDidLoad()
+        termText.borderStyle = UITextField.BorderStyle.none
+        definitionText.borderStyle = UITextField.BorderStyle.none
      }
  }

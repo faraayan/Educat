@@ -10,7 +10,7 @@
         <!--Notifications-->
         <scene sceneID="ykG-TJ-5Cn">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="rGK-d8-mhD" customClass="Notifications" customModule="NoCrastinateUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="rGK-d8-mhD" customClass="Notifications" customModule="NoCrastinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Shj-WQ-FdS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                                 <color key="barTintColor" red="0.95879262685775757" green="0.98252660036087036" blue="0.97960716485977173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem id="V3R-IN-XJT">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="bFj-q8-DkU">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="bFj-q8-DkU">
                                             <connections>
                                                 <action selector="cancelButton:" destination="rGK-d8-mhD" id="xaE-B4-HAt"/>
                                             </connections>
@@ -92,7 +92,7 @@
         <!--Folders-->
         <scene sceneID="Roa-4f-6hd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="00Y-PW-KYh" customClass="Folders" customModule="NoCrastinateUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="00Y-PW-KYh" customClass="Folders" customModule="NoCrastinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HsM-21-BXY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,9 +119,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mRQ-HW-yTe">
                                             <connections>
-                                                <segue destination="9jc-ba-Ugr" kind="popoverPresentation" popoverAnchorBarButtonItem="mRQ-HW-yTe" id="ngB-6k-s4f">
-                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                </segue>
+                                                <segue destination="9jc-ba-Ugr" kind="show" identifier="CreateFolder" id="etf-ZA-Pqx"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -154,26 +152,25 @@
                     </view>
                     <navigationItem key="navigationItem" id="X7E-c9-si4"/>
                     <connections>
-                        <outlet property="folderTable" destination="jhB-Bj-LqT" id="tpJ-kb-75r"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueFolder" id="bUe-nm-HId"/>
+                        <outlet property="folderTable" destination="jhB-Bj-LqT" id="t0p-UW-Jj1"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueFolder" id="0Y4-8C-ZeG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSt-8D-ZgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="FM4-3C-NVF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="72.463768115942031" y="-583.25892857142856"/>
+            <point key="canvasLocation" x="13" y="-577"/>
         </scene>
         <!--Add Folder-->
         <scene sceneID="AVf-mg-BvX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="9jc-ba-Ugr" customClass="AddFolder" customModule="NoCrastinateUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="9jc-ba-Ugr" customClass="AddFolder" customModule="NoCrastinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vpJ-Zx-oWX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="omT-Gn-9IZ" customClass="folderNameText" customModule="NoCrastinateUpdate" customModuleProvider="target">
-                                <rect key="frame" x="89" y="194" width="236" height="34"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="omT-Gn-9IZ" customClass="folderNameText" customModule="NoCrastinate" customModuleProvider="target">
+                                <rect key="frame" x="89" y="203" width="237" height="34"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -199,7 +196,7 @@
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Of-Tf-Xgx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" red="0.98076909780502319" green="0.98467952013015747" blue="0.9912605881690979" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,7 +205,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem id="M4E-3a-imf">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="SbD-ZH-SQ3">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="SbD-ZH-SQ3">
                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="cancelFolder:" destination="9jc-ba-Ugr" id="iuo-QH-0ZD"/>
@@ -217,21 +214,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="____________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYL-jS-Wu8">
+                                <rect key="frame" x="89" y="203" width="248" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97501152753829956" green="0.98848921060562134" blue="0.9764525294303894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EQC-ig-wLD" firstAttribute="centerX" secondItem="omT-Gn-9IZ" secondAttribute="centerX" id="5kk-CP-nS9"/>
-                            <constraint firstItem="DMv-oQ-S58" firstAttribute="trailing" secondItem="EQC-ig-wLD" secondAttribute="trailing" id="Gtp-qN-bwE"/>
-                            <constraint firstItem="DMv-oQ-S58" firstAttribute="top" secondItem="3Of-Tf-Xgx" secondAttribute="bottom" constant="66" id="HWn-01-1bP"/>
-                            <constraint firstItem="EQC-ig-wLD" firstAttribute="leading" secondItem="Oph-D5-prQ" secondAttribute="leading" constant="165" id="OBy-HL-VF2"/>
+                            <constraint firstItem="omT-Gn-9IZ" firstAttribute="top" secondItem="DMv-oQ-S58" secondAttribute="bottom" constant="33" id="8Xc-4y-XBX"/>
+                            <constraint firstItem="DMv-oQ-S58" firstAttribute="top" secondItem="3Of-Tf-Xgx" secondAttribute="bottom" constant="34" id="HWn-01-1bP"/>
+                            <constraint firstItem="omT-Gn-9IZ" firstAttribute="leading" secondItem="Oph-D5-prQ" secondAttribute="leading" constant="89" id="Knz-W0-alq"/>
                             <constraint firstItem="3Of-Tf-Xgx" firstAttribute="leading" secondItem="Oph-D5-prQ" secondAttribute="leading" id="QG0-AZ-Vh9"/>
-                            <constraint firstItem="EQC-ig-wLD" firstAttribute="top" secondItem="omT-Gn-9IZ" secondAttribute="bottom" constant="89" id="SrB-rE-CxQ"/>
+                            <constraint firstItem="omT-Gn-9IZ" firstAttribute="centerX" secondItem="EQC-ig-wLD" secondAttribute="centerX" id="U9k-h4-IfR"/>
                             <constraint firstItem="DMv-oQ-S58" firstAttribute="leading" secondItem="vpJ-Zx-oWX" secondAttribute="leadingMargin" id="YjY-fm-7Nu"/>
-                            <constraint firstItem="omT-Gn-9IZ" firstAttribute="top" secondItem="DMv-oQ-S58" secondAttribute="bottom" constant="24" id="ZL4-Ik-8Ih"/>
+                            <constraint firstItem="Oph-D5-prQ" firstAttribute="bottom" secondItem="EQC-ig-wLD" secondAttribute="bottom" constant="476" id="eMM-Bt-6lW"/>
                             <constraint firstItem="3Of-Tf-Xgx" firstAttribute="top" secondItem="Oph-D5-prQ" secondAttribute="top" id="hck-gO-L4k"/>
+                            <constraint firstItem="EQC-ig-wLD" firstAttribute="leading" secondItem="Oph-D5-prQ" secondAttribute="leading" constant="165" id="lLI-Dc-Bg0"/>
                             <constraint firstItem="3Of-Tf-Xgx" firstAttribute="trailing" secondItem="Oph-D5-prQ" secondAttribute="trailing" id="lgX-en-2Xz"/>
-                            <constraint firstItem="EQC-ig-wLD" firstAttribute="centerX" secondItem="3Of-Tf-Xgx" secondAttribute="centerX" id="vOm-Cu-2QZ"/>
-                            <constraint firstItem="omT-Gn-9IZ" firstAttribute="leading" secondItem="Oph-D5-prQ" secondAttribute="leading" constant="89" id="xbH-jK-MhW"/>
+                            <constraint firstItem="EQC-ig-wLD" firstAttribute="centerX" secondItem="3Of-Tf-Xgx" secondAttribute="centerX" id="vRR-fb-mge"/>
+                            <constraint firstItem="EQC-ig-wLD" firstAttribute="trailing" secondItem="DMv-oQ-S58" secondAttribute="trailing" id="yTY-dH-Xab"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oph-D5-prQ"/>
                     </view>
@@ -241,6 +246,7 @@
                         <outlet property="folderNameText" destination="omT-Gn-9IZ" id="u5P-7h-dhw"/>
                         <outlet property="saveFolder" destination="EQC-ig-wLD" id="chL-Rn-dWO"/>
                         <outlet property="titleLabel" destination="DMv-oQ-S58" id="NhU-PZ-Bj4"/>
+                        <outlet property="underlineBar" destination="gYL-jS-Wu8" id="UjZ-pa-Zag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fW0-yh-Ol9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -250,7 +256,7 @@
         <!--Set Study Timer-->
         <scene sceneID="RjI-YP-SH6">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="UDe-iG-VQz" customClass="SetStudyTimer" customModule="NoCrastinateUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="UDe-iG-VQz" customClass="SetStudyTimer" customModule="NoCrastinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uu3-0k-UgJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,10 +274,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended studying time for today:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-Z9-vGo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's recommended study time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-Z9-vGo">
                                 <rect key="frame" x="45" y="226" width="324" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="RzX-Fr-4cS"/>
+                                    <constraint firstAttribute="height" constant="31" id="OsE-Bh-kJg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -341,27 +347,27 @@
                             <constraint firstItem="79v-Ze-PNG" firstAttribute="trailing" secondItem="J3M-ag-vqG" secondAttribute="trailing" constant="159" id="3so-mu-lLP"/>
                             <constraint firstItem="TLz-Aj-6vZ" firstAttribute="centerX" secondItem="d7n-4B-avX" secondAttribute="centerX" id="71p-vg-Vpx"/>
                             <constraint firstItem="DIt-IT-3wY" firstAttribute="leading" secondItem="NH3-rp-zZK" secondAttribute="leading" id="EQv-Se-fU4"/>
+                            <constraint firstItem="tCA-Z9-vGo" firstAttribute="centerX" secondItem="IRm-qU-mfZ" secondAttribute="centerX" id="ESZ-do-DcZ"/>
                             <constraint firstItem="79v-Ze-PNG" firstAttribute="bottom" secondItem="d7n-4B-avX" secondAttribute="bottom" constant="117" id="EXJ-IS-WB6"/>
+                            <constraint firstItem="tCA-Z9-vGo" firstAttribute="leading" secondItem="460-av-TUo" secondAttribute="leading" id="GtY-1D-LZu"/>
                             <constraint firstItem="lFt-vt-w9M" firstAttribute="baseline" secondItem="NH3-rp-zZK" secondAttribute="baseline" id="I2n-36-M2K"/>
                             <constraint firstItem="Zig-l9-Ku3" firstAttribute="leading" secondItem="Uu3-0k-UgJ" secondAttribute="leadingMargin" id="IDj-37-CQv"/>
-                            <constraint firstItem="tCA-Z9-vGo" firstAttribute="centerX" secondItem="IRm-qU-mfZ" secondAttribute="centerX" id="K1s-7W-Ph6"/>
                             <constraint firstItem="TLz-Aj-6vZ" firstAttribute="leading" secondItem="79v-Ze-PNG" secondAttribute="leading" constant="45" id="PLz-fe-W3D"/>
                             <constraint firstItem="lFt-vt-w9M" firstAttribute="centerX" secondItem="J3M-ag-vqG" secondAttribute="centerX" id="aDw-yq-inK"/>
                             <constraint firstItem="J3M-ag-vqG" firstAttribute="top" secondItem="TLz-Aj-6vZ" secondAttribute="bottom" constant="83.5" id="bep-8i-wSe"/>
                             <constraint firstItem="d7n-4B-avX" firstAttribute="leading" secondItem="79v-Ze-PNG" secondAttribute="leading" constant="142" id="dD6-iL-hGs"/>
                             <constraint firstItem="DIt-IT-3wY" firstAttribute="leading" secondItem="79v-Ze-PNG" secondAttribute="leading" constant="57" id="dYb-R4-ToI"/>
                             <constraint firstItem="IRm-qU-mfZ" firstAttribute="top" secondItem="79v-Ze-PNG" secondAttribute="top" id="dxf-JZ-YV4"/>
-                            <constraint firstItem="tCA-Z9-vGo" firstAttribute="trailing" secondItem="TLz-Aj-6vZ" secondAttribute="trailing" id="fjg-P3-seG"/>
                             <constraint firstItem="lFt-vt-w9M" firstAttribute="top" secondItem="Uu3-0k-UgJ" secondAttribute="top" constant="318" id="gQe-hh-zx5"/>
+                            <constraint firstItem="tCA-Z9-vGo" firstAttribute="trailing" secondItem="TLz-Aj-6vZ" secondAttribute="trailing" id="hiz-dc-0FK"/>
                             <constraint firstItem="DIt-IT-3wY" firstAttribute="trailing" secondItem="NH3-rp-zZK" secondAttribute="trailing" id="iSu-sX-mhX"/>
                             <constraint firstItem="IRm-qU-mfZ" firstAttribute="leading" secondItem="79v-Ze-PNG" secondAttribute="leading" id="jin-lK-xaO"/>
                             <constraint firstItem="Zig-l9-Ku3" firstAttribute="centerX" secondItem="NH3-rp-zZK" secondAttribute="centerX" id="kHb-ii-RBv"/>
                             <constraint firstItem="460-av-TUo" firstAttribute="top" secondItem="Uu3-0k-UgJ" secondAttribute="topMargin" constant="439" id="kk5-fx-Eq2"/>
-                            <constraint firstItem="NH3-rp-zZK" firstAttribute="top" secondItem="tCA-Z9-vGo" secondAttribute="bottom" constant="18" id="mKT-zY-7SA"/>
-                            <constraint firstItem="tCA-Z9-vGo" firstAttribute="leading" secondItem="460-av-TUo" secondAttribute="leading" id="pSx-4J-zlx"/>
                             <constraint firstItem="Zig-l9-Ku3" firstAttribute="top" secondItem="IRm-qU-mfZ" secondAttribute="bottom" constant="42" id="vhh-RQ-aqo"/>
                             <constraint firstItem="TLz-Aj-6vZ" firstAttribute="centerX" secondItem="Uu3-0k-UgJ" secondAttribute="centerX" id="vzg-oA-C1a"/>
                             <constraint firstItem="TLz-Aj-6vZ" firstAttribute="leading" secondItem="460-av-TUo" secondAttribute="leading" id="wu0-QF-jNN"/>
+                            <constraint firstItem="NH3-rp-zZK" firstAttribute="top" secondItem="tCA-Z9-vGo" secondAttribute="bottom" constant="18" id="wyN-TL-Zqu"/>
                             <constraint firstItem="J3M-ag-vqG" firstAttribute="leading" secondItem="DIt-IT-3wY" secondAttribute="trailing" constant="28" id="xxR-VV-dDK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="79v-Ze-PNG"/>
@@ -381,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="-578.26086956521749" y="147.99107142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Flashcards-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="NoCrastinateUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="Flashcards" customModule="NoCrastinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,9 +410,7 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hns-xq-C0c">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="uo6-Y2-dfM" kind="popoverPresentation" popoverAnchorBarButtonItem="hns-xq-C0c" id="8a2-fu-DKE">
-                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                </segue>
+                                                <segue destination="uo6-Y2-dfM" kind="show" id="8a2-fu-DKE"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -467,7 +471,7 @@
         <!--Expanded Flashcard-->
         <scene sceneID="zeA-VM-fqP">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="99e-2t-lFW" customClass="ExpandedFlashcard" customModule="NoCrastinateUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="99e-2t-lFW" customClass="ExpandedFlashcard" customModule="NoCrastinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hOe-yy-u2L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -551,18 +555,21 @@
         <!--Add Flashcard-->
         <scene sceneID="IeN-5M-Qrb">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uo6-Y2-dfM" customClass="AddFlashcard" customModule="NoCrastinateUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uo6-Y2-dfM" customClass="AddFlashcard" customModule="NoCrastinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tnS-yP-KWd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Definition" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-Js-Pzc">
-                                <rect key="frame" x="20" y="283" width="374" height="34"/>
+                                <rect key="frame" x="20" y="279" width="337" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5hD-9A-8Rd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNY-MD-fDG">
-                                <rect key="frame" x="169" y="373" width="76" height="36"/>
+                                <rect key="frame" x="190" y="401" width="34" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="0.23718361941315602" green="0.54459334812587956" blue="0.76518876899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -572,11 +579,11 @@
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-gf-Ve1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="46"/>
                                 <color key="barTintColor" red="0.97501152753829956" green="0.98848921060562134" blue="0.9764525294303894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem id="8aQ-Au-ohR">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zkZ-OD-S7E">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="zkZ-OD-S7E">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="DoneFlashcard:" destination="uo6-Y2-dfM" id="cb2-7Y-YmI"/>
@@ -586,43 +593,66 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Term" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLB-Fi-5pk">
-                                <rect key="frame" x="20" y="198" width="374" height="34"/>
+                                <rect key="frame" x="20" y="198" width="337" height="34"/>
                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Flashcard:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRZ-Ja-v8D">
-                                <rect key="frame" x="20" y="87" width="225" height="62"/>
+                                <rect key="frame" x="20" y="121" width="225" height="62"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="MOu-B8-aXn"/>
+                                    <constraint firstAttribute="height" constant="62" id="rrL-OA-Qv4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsW-BG-anN">
+                                <rect key="frame" x="20" y="293.5" width="340" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-IF-yTG">
+                                <rect key="frame" x="20" y="213" width="347" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cow-X7-xnD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97598773241043091" green="0.98527473211288452" blue="0.99022156000137329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LRZ-Ja-v8D" firstAttribute="trailing" secondItem="BNY-MD-fDG" secondAttribute="trailing" id="0jf-LM-Bn4"/>
                             <constraint firstItem="eX7-gf-Ve1" firstAttribute="leading" secondItem="C5j-hG-WWd" secondAttribute="leading" id="96l-DW-4rM"/>
-                            <constraint firstItem="BNY-MD-fDG" firstAttribute="centerX" secondItem="QXc-Js-Pzc" secondAttribute="centerX" id="Ba8-B0-JMm"/>
-                            <constraint firstItem="BNY-MD-fDG" firstAttribute="top" secondItem="QXc-Js-Pzc" secondAttribute="bottom" constant="56" id="Dgq-cQ-ALH"/>
-                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="pLB-Fi-5pk" secondAttribute="bottom" constant="51" id="FOV-8m-GtK"/>
-                            <constraint firstItem="LRZ-Ja-v8D" firstAttribute="leading" secondItem="pLB-Fi-5pk" secondAttribute="leading" id="NW9-2N-kNO"/>
-                            <constraint firstItem="BNY-MD-fDG" firstAttribute="centerX" secondItem="eX7-gf-Ve1" secondAttribute="centerX" id="NqP-ET-z7M"/>
+                            <constraint firstItem="TsW-BG-anN" firstAttribute="leading" secondItem="C5j-hG-WWd" secondAttribute="leading" constant="20" id="EhT-qf-clL"/>
+                            <constraint firstItem="pLB-Fi-5pk" firstAttribute="leading" secondItem="Oje-IF-yTG" secondAttribute="leading" id="KEm-hl-i5b"/>
+                            <constraint firstItem="LRZ-Ja-v8D" firstAttribute="leading" secondItem="Oje-IF-yTG" secondAttribute="leading" id="QRE-WL-8oa"/>
                             <constraint firstItem="eX7-gf-Ve1" firstAttribute="trailing" secondItem="C5j-hG-WWd" secondAttribute="trailing" id="Qp4-9m-CDO"/>
-                            <constraint firstItem="LRZ-Ja-v8D" firstAttribute="top" secondItem="eX7-gf-Ve1" secondAttribute="bottom" constant="31" id="Uve-wn-oar"/>
-                            <constraint firstItem="pLB-Fi-5pk" firstAttribute="top" secondItem="LRZ-Ja-v8D" secondAttribute="bottom" constant="49" id="eZ6-Gv-d2A"/>
-                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="trailing" secondItem="pLB-Fi-5pk" secondAttribute="trailing" id="sVq-ax-VaT"/>
-                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="leading" secondItem="pLB-Fi-5pk" secondAttribute="leading" id="tjQ-G3-1Zr"/>
-                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="leading" secondItem="tnS-yP-KWd" secondAttribute="leadingMargin" id="vnR-1O-RVS"/>
+                            <constraint firstItem="TsW-BG-anN" firstAttribute="trailing" secondItem="Oje-IF-yTG" secondAttribute="trailing" constant="-7" id="RBB-AW-60J"/>
+                            <constraint firstItem="LRZ-Ja-v8D" firstAttribute="top" secondItem="eX7-gf-Ve1" secondAttribute="bottom" constant="31" id="XRq-sN-iJH"/>
+                            <constraint firstItem="Oje-IF-yTG" firstAttribute="top" secondItem="LRZ-Ja-v8D" secondAttribute="bottom" constant="30" id="Zy5-My-pn2"/>
+                            <constraint firstItem="C5j-hG-WWd" firstAttribute="trailing" secondItem="pLB-Fi-5pk" secondAttribute="trailing" constant="57" id="beX-CT-fzK"/>
+                            <constraint firstItem="LRZ-Ja-v8D" firstAttribute="leading" secondItem="tnS-yP-KWd" secondAttribute="leadingMargin" id="cAd-qO-WpE"/>
+                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="trailing" secondItem="pLB-Fi-5pk" secondAttribute="trailing" id="csi-Ts-WIw"/>
+                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="45" id="e4d-43-Nhd"/>
+                            <constraint firstItem="BNY-MD-fDG" firstAttribute="top" secondItem="QXc-Js-Pzc" secondAttribute="bottom" constant="88" id="fdl-LM-L66"/>
+                            <constraint firstItem="BNY-MD-fDG" firstAttribute="top" secondItem="TsW-BG-anN" secondAttribute="bottom" constant="84" id="lQa-lm-yHy"/>
+                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="tnS-yP-KWd" secondAttribute="top" constant="279" id="mhc-5t-050"/>
+                            <constraint firstItem="BNY-MD-fDG" firstAttribute="centerX" secondItem="eX7-gf-Ve1" secondAttribute="centerX" id="ndN-Ef-TaB"/>
+                            <constraint firstItem="TsW-BG-anN" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="59.5" id="uke-EY-GZh"/>
                             <constraint firstItem="eX7-gf-Ve1" firstAttribute="top" secondItem="C5j-hG-WWd" secondAttribute="top" id="xSH-V3-HNM"/>
+                            <constraint firstItem="QXc-Js-Pzc" firstAttribute="leading" secondItem="TsW-BG-anN" secondAttribute="leading" id="xTG-Zf-ufK"/>
+                            <constraint firstItem="pLB-Fi-5pk" firstAttribute="bottom" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="-2" id="xee-KW-bjI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C5j-hG-WWd"/>
                     </view>
                     <navigationItem key="navigationItem" id="I33-IZ-NP2"/>
                     <connections>
                         <outlet property="definitionText" destination="QXc-Js-Pzc" id="LvQ-x4-ZJl"/>
+                        <outlet property="definitionUnderline" destination="TsW-BG-anN" id="6TP-H4-mgJ"/>
                         <outlet property="termText" destination="pLB-Fi-5pk" id="fM7-Gb-PO3"/>
+                        <outlet property="termUnderline" destination="Oje-IF-yTG" id="B7X-AN-IxS"/>
                         <outlet property="titleLabel" destination="LRZ-Ja-v8D" id="kan-90-Abh"/>
                     </connections>
                 </viewController>

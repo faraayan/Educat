@@ -23,6 +23,7 @@ var hello = 0
 var folderHeaderHeight: CGFloat { 10.0 }
 let foldersNameKey = "foldersName!"
 
+
 func saveData(){
     UserDefaults.standard.set(foldersName,forKey: foldersNameKey)
     UserDefaults.standard.set(flashcardsTerm,forKey:"theEventT")
@@ -32,6 +33,7 @@ func saveData(){
     UserDefaults.standard.set(flashcardsMonthCreated,forKey:"flashcardMonth")
     UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
 }
+
 
 func createData(){
     foldersName = UserDefaults.standard.object(forKey: foldersNameKey) as? [String] ?? []
@@ -52,6 +54,8 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
         return foldersName.count
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell2 = UITableViewCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         foldersName = UserDefaults.standard.object(forKey: foldersNameKey) as! [String]
@@ -70,7 +74,6 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         folderTable.reloadData()
-        folderTable.backgroundColor = UIColor.white
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -80,6 +83,7 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     open override func viewDidLoad() {
         super.viewDidLoad()
+        folderTable.backgroundColor = UIColor.white
         if hello == 0{
             createData()
         }
@@ -92,6 +96,13 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
             UserDefaults.standard.set(foldersName, forKey: foldersNameKey)
             hello = 1
         }
+        folderTable.reloadData()
+    }
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        folderTable.reloadData()
+    }
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController){
         folderTable.reloadData()
     }
     

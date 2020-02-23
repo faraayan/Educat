@@ -13,22 +13,25 @@ func createTime(){
     flashcardsMonthCreated = UserDefaults.standard.object(forKey: "flashcardMonth") as? [Int] ?? []
     flashcardsYearCreated = UserDefaults.standard.object(forKey: "flashcardYear") as? [Int] ?? []
 }
+
 class AddFolder: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var folderNameText: UITextField!
     @IBOutlet weak var addFolderNav: UINavigationBar!
-    
     @IBOutlet weak var saveFolder: UIButton!
+    @IBOutlet weak var underlineBar: UILabel!
+    
     @IBAction func saveFolder(_ sender: Any) {
         userDataF = true
         UserDefaults.standard.set(userDataF, forKey:"userDataF")
         whichFolder = flashcardsTerm.count
         if folderNameText.text == ""{
-            folderNameText.backgroundColor = UIColor.red
+            underlineBar.textColor = UIColor.red
         }
+        
         if folderNameText.text != ""{
-            folderNameText.backgroundColor = UIColor.white
+            underlineBar.textColor = UIColor.black
             foldersName.append(folderNameText.text!)
             flashcardsTerm.append([])
             flashcardsDef.append([])
@@ -46,17 +49,23 @@ class AddFolder: UIViewController {
             UserDefaults.standard.set(flashcardsMonthCreated,forKey:"flashcardMonth")
             UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
             createTime()
+            
+            dismiss(animated: true, completion: nil)
         }
-        dismiss(animated: true, completion: nil)
     }
+    
     
     @IBAction func cancelFolder(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         saveFolder.layer.cornerRadius = 8
+        folderNameText.borderStyle = UITextField.BorderStyle.none
     }
 }
 
