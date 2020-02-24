@@ -20,7 +20,7 @@
 		419D9910236619FF00E4E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419D990E236619FF00E4E6C9 /* LaunchScreen.storyboard */; };
 		419D992623661B0400E4E6C9 /* AddFlashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D992523661B0400E4E6C9 /* AddFlashcard.swift */; };
 		41C6F349240364B000BC9615 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C6F348240364B000BC9615 /* LaunchImage.png */; };
-		41D46C35236BC11000BB3803 /* SetStudyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D46C34236BC11000BB3803 /* SetStudyTimer.swift */; };
+		41D46C35236BC11000BB3803 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D46C34236BC11000BB3803 /* Analytics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		419D991C236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419D992523661B0400E4E6C9 /* AddFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcard.swift; sourceTree = "<group>"; };
 		41C6F348240364B000BC9615 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
-		41D46C34236BC11000BB3803 /* SetStudyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStudyTimer.swift; sourceTree = "<group>"; };
+		41D46C34236BC11000BB3803 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 				419D9903236619FC00E4E6C9 /* AppDelegate.swift */,
 				419D9905236619FC00E4E6C9 /* SceneDelegate.swift */,
 				414E16DC236AA31300BD0BEF /* Notifications.swift */,
-				41D46C34236BC11000BB3803 /* SetStudyTimer.swift */,
+				41D46C34236BC11000BB3803 /* Analytics.swift */,
 				41056F882366E51E00A57676 /* Folders.swift */,
 				41056F8A2366E5D700A57676 /* AddFolder.swift */,
 				419D9907236619FC00E4E6C9 /* Flashcards.swift */,
@@ -235,7 +235,7 @@
 				419D9908236619FC00E4E6C9 /* Flashcards.swift in Sources */,
 				41056F892366E51E00A57676 /* Folders.swift in Sources */,
 				4142A5342366B42A00C25827 /* ExpandedFlashcard.swift in Sources */,
-				41D46C35236BC11000BB3803 /* SetStudyTimer.swift in Sources */,
+				41D46C35236BC11000BB3803 /* Analytics.swift in Sources */,
 				41056F8B2366E5D700A57676 /* AddFolder.swift in Sources */,
 				419D9904236619FC00E4E6C9 /* AppDelegate.swift in Sources */,
 				419D992623661B0400E4E6C9 /* AddFlashcard.swift in Sources */,

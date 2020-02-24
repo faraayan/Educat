@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Flashcards.swift
 //  NoCrastinate
 //
 //  Created by Fara Yan on 10/27/19.

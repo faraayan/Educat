@@ -1,6 +1,6 @@
 
 //
-//  SetStudyTimer.swift
+//  Analytics.swift
 //  NoCrastinate
 //
 //  Created by Fara Yan on 10/31/19.
@@ -8,7 +8,7 @@
 //
 
 import UIKit
-class SetStudyTimer: UIViewController{
+class Analytics: UIViewController{
     
     var termsMissed = 0
     var charCount = 0
