@@ -38,13 +38,11 @@ class ExpandedFlashcard: UIViewController {
         dismiss(animated: true, completion: nil)
         
     }
-
    override func viewDidLoad() {
         super.viewDidLoad()
     print(myIndex)
     termLabel.text = flashcardsTerm[whichFolder][whichFlashcard]
     defLabel.text = flashcardsDef[whichFolder][whichFlashcard]
-        // Do any additional setup after loading the view.
     }
 
 }

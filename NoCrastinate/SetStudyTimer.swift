@@ -1,7 +1,7 @@
 
 //
 //  SetStudyTimer.swift
-//  CleverStudy
+//  NoCrastinate
 //
 //  Created by Fara Yan on 10/31/19.
 //  Copyright © 2019 Fara Yan. All rights reserved.
@@ -10,12 +10,9 @@
 import UIKit
 class SetStudyTimer: UIViewController{
     
-    var minutes = 0
-    var sum = 0
-    var timer = Timer()
-    var understand = 0
-    var notUnderstand = 0
-    var studyTime = 1.0
+    var termsMissed = 0
+    var charCount = 0
+    var avgCharCount = 0.0
 
     @IBOutlet weak var introLabel: UILabel!
     @IBOutlet weak var minuteLabel: UILabel!
@@ -40,37 +37,43 @@ class SetStudyTimer: UIViewController{
         let daysCountingYear = (year-flashcardsYearCreated[whichFolder])*365
         let daysCountingMonth = (month-flashcardsMonthCreated[whichFolder])*30
         let daysCountingDay = day-flashcardsDayCreated[whichFolder]
-        let daysSinceCreation = daysCountingYear + daysCountingMonth + daysCountingDay
-        print(year)
-        print(flashcardsYearCreated[whichFolder])
-        print(flashcardsMonthCreated[whichFolder])
-        print(String(daysSinceCreation) + "DAYS CREATED")
+        var daysSinceCreation = daysCountingYear + daysCountingMonth + daysCountingDay
         for element in remembered[whichFolder]{
-            if element == 1{
-                sum+=1
-                understand+=1
-            }
             if element == -1{
-                notUnderstand+=1
+                termsMissed+=1
             }
         }
-        print(String(sum) + " SUM")
-        let forgettingCurve = Double(flashcardsTerm[whichFolder].count)-Double(daysSinceCreation)*0.2
-        let proficiency = (1.2*Double(notUnderstand))-((1.3*Double(understand))-1.0)
-        if(forgettingCurve + proficiency<0){
-            studyTime = Double(flashcardsTerm[whichFolder].count)*0.2
-        }else{
-            studyTime = forgettingCurve + proficiency
+        for definition in flashcardsDef[whichFolder] {
+            charCount += definition.count
         }
-        if flashcardsTerm[whichFolder].count == 0{
+        for term in flashcardsTerm[whichFolder] {
+            charCount += term.count
+        }
+        if flashcardsTerm.count > 0{
+            avgCharCount = Double(Double(charCount)/Double(flashcardsTerm[whichFolder].count))
+        }
+        if daysSinceCreation <= 0{
+            daysSinceCreation = 1
+        }
+        let numOfRepititions = 3.0/Double(daysSinceCreation)
+        print(numOfRepititions)
+        let minToRead = Double(charCount)/600
+        print(minToRead)
+        let additionalMinToRead = Double(termsMissed)*(avgCharCount/Double(600))
+        let numOfMinutes = round(Double(numOfRepititions * minToRead + additionalMinToRead)*Double(100.0))
+        print(Double(numOfMinutes / 100))
+        if (numOfMinutes / 100).isNaN{
+            recTimeLabel.text = "0.00"
+        }
+        else{
+            recTimeLabel.text = String(Double(numOfMinutes/100))
+        }
+        if flashcardsTerm[whichFolder].count > 0 {
+            percentofMasteryLabel.text = String(Int((flashcardsTerm[whichFolder].count - termsMissed)/flashcardsTerm[whichFolder].count)*100)
+        }else{
             percentofMasteryLabel.text = "0"
-        }else{
-        percentofMasteryLabel.text = String(Int((sum*100)/remembered[whichFolder].count))
         }
-        if(flashcardsTerm[whichFolder].count == 0){
-            studyTime = 0.0
-        }
-        recTimeLabel.text = String(studyTime)
+        
     }
     override func viewDidLoad()
     {

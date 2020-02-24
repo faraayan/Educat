@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CleverStudy
+//  NoCrastinate
 //
 //  Created by Fara Yan on 10/27/19.
 //  Copyright © 2019 Fara Yan. All rights reserved.
@@ -10,9 +10,26 @@ import UIKit
 
 @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        /*
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var vc: UIViewController
+        if(UserDefaults.standard.value(forKey: "name") as? String) == nil{
+            vc = storyboard.instantiateViewController(withIdentifier: "Introduction")
+            print("did this")
+            print(vc)
+        }else{
+            vc = storyboard.instantiateInitialViewController()!
+            print("did that")
+        }
+        
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "Introduction")
+        self.window?.makeKeyAndVisible()
+        */
         return true
     }
 
