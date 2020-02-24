@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,16 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen Logo" translatesAutoresizingMaskIntoConstraints="NO" id="N01-lm-j1P">
-                                <rect key="frame" x="50" y="294" width="307" height="169"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOCRASTINATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-c5-X6w">
+                                <rect key="frame" x="144" y="608" width="126" height="175"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-zX-W3p">
+                                <rect key="frame" x="87" y="244" width="231" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="J11-xa-mgo"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" name="LaunchScreenbkg"/>
+                        <color key="backgroundColor" red="0.9239535928" green="0.9131043553" blue="0.89606857299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="N01-lm-j1P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="8xY-E0-J82"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N01-lm-j1P" secondAttribute="trailing" constant="57" id="M7A-Sk-7td"/>
-                            <constraint firstItem="N01-lm-j1P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="t80-pV-2Y4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N01-lm-j1P" secondAttribute="bottom" constant="399" id="zrc-va-4R7"/>
+                            <constraint firstItem="eWo-zX-W3p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="4bX-Z2-ht0"/>
+                            <constraint firstItem="cb5-c5-X6w" firstAttribute="top" secondItem="eWo-zX-W3p" secondAttribute="bottom" constant="200" id="Gl5-hX-Q0z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cb5-c5-X6w" secondAttribute="bottom" constant="79" id="KTI-xa-RWr"/>
+                            <constraint firstItem="eWo-zX-W3p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Owr-Lg-GfX"/>
+                            <constraint firstItem="cb5-c5-X6w" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cGN-Zt-W10"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eWo-zX-W3p" secondAttribute="trailing" constant="96" id="wwX-Ci-6qW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,9 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen Logo" width="231.5" height="232.5"/>
-        <namedColor name="LaunchScreenbkg">
-            <color red="0.92549019607843142" green="0.9137254901960784" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="LaunchImage.png" width="463" height="465"/>
     </resources>
 </document>
