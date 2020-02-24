@@ -24,13 +24,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a time to study everyday!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-bS-6N6">
                                 <rect key="frame" x="46" y="285" width="320" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-S2-kWI">
                                 <rect key="frame" x="156" y="557" width="100" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="save"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <action selector="saveNotificationTime:" destination="rGK-d8-mhD" eventType="touchUpInside" id="yMU-as-fhs"/>
                                 </connections>
@@ -38,7 +40,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqT-um-udr">
                                 <rect key="frame" x="25" y="60" width="30" height="59"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
-                                <state key="normal" title="✕"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <action selector="cancelNotification:" destination="rGK-d8-mhD" eventType="touchUpInside" id="nN2-E9-Lko"/>
                                 </connections>
@@ -49,7 +53,7 @@
                                     <constraint firstAttribute="height" constant="62" id="rNz-CW-SQj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -104,7 +108,7 @@
                                     <constraint firstAttribute="width" constant="163" id="5CR-Bf-f4X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asx-zo-W1L">
@@ -113,7 +117,9 @@
                                     <constraint firstAttribute="height" constant="59" id="cDb-Jm-Esx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="45"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="9jc-ba-Ugr" kind="show" id="ihf-2r-tFe"/>
                                 </connections>
@@ -124,7 +130,9 @@
                                     <constraint firstAttribute="width" constant="29" id="0sS-pm-Kr2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="tintColor" name="navigationColor"/>
                                 <state key="normal" image="clock" catalog="system">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="100" scale="large" weight="semibold"/>
                                 </state>
                                 <connections>
@@ -178,14 +186,16 @@
                                     <constraint firstAttribute="height" constant="48" id="A8L-0U-dVo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQC-ig-wLD">
                                 <rect key="frame" x="165" y="348" width="85" height="37"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                <state key="normal" title="add"/>
+                                <state key="normal" title="add">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <action selector="saveFolder:" destination="9jc-ba-Ugr" eventType="touchUpInside" id="2p8-Z6-Rlr"/>
                                 </connections>
@@ -203,7 +213,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1C-Xy-9vB">
                                 <rect key="frame" x="25" y="60" width="30" height="59"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
-                                <state key="normal" title="✕"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <action selector="cancelFolder:" destination="9jc-ba-Ugr" eventType="touchUpInside" id="aOL-oU-VRC"/>
                                 </connections>
@@ -251,7 +263,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH3-rp-zZK">
                                 <rect key="frame" x="57" y="293.5" width="121" height="61.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="45"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's recommended study time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-Z9-vGo">
@@ -260,7 +272,7 @@
                                     <constraint firstAttribute="height" constant="31" id="VpB-nR-4to"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="460-av-TUo">
@@ -272,13 +284,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLz-Aj-6vZ">
                                 <rect key="frame" x="45" y="404.5" width="289" height="26"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3M-ag-vqG">
                                 <rect key="frame" x="206" y="514" width="14" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7n-4B-avX">
@@ -301,13 +313,13 @@
                                     <constraint firstAttribute="width" constant="121" id="fya-gA-j9L"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="45"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analytics:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zig-l9-Ku3">
                                 <rect key="frame" x="56" y="130" width="166" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFt-vt-w9M">
@@ -316,7 +328,7 @@
                                     <constraint firstAttribute="height" constant="22" id="hfE-vB-6wd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -387,6 +399,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="Ena-H9-13z"/>
                                 </constraints>
+                                <color key="tintColor" name="navigationColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="UDe-iG-VQz" kind="popoverPresentation" popoverAnchorView="gIW-jN-8lW" id="HrG-5a-x3v">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -396,7 +412,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QZ-EnS">
                                 <rect key="frame" x="19" y="44" width="30" height="43"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
-                                <state key="normal" title="✕"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <action selector="closeFlashcards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrI-BN-7By"/>
                                 </connections>
@@ -404,7 +422,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5U-7b-t4i">
                                 <rect key="frame" x="20" y="98.5" width="291" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRW-If-dKa">
@@ -413,7 +431,9 @@
                                     <constraint firstAttribute="width" constant="30" id="Jgw-3T-HNS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="35"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="uo6-Y2-dfM" kind="show" id="RNy-U7-A47"/>
                                 </connections>
@@ -569,7 +589,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3g-rh-uho">
                                 <rect key="frame" x="20" y="59" width="30" height="59"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
-                                <state key="normal" title="✕"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <action selector="cancelFlashcard:" destination="uo6-Y2-dfM" eventType="touchUpInside" id="5Et-PW-gDp"/>
                                 </connections>
@@ -580,7 +602,9 @@
                                     <constraint firstAttribute="width" secondItem="BNY-MD-fDG" secondAttribute="height" multiplier="17:18" id="v2d-J5-9sg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
                                 <connections>
                                     <action selector="saveFlashcard:" destination="uo6-Y2-dfM" eventType="touchUpInside" id="8yq-SQ-JtM"/>
                                 </connections>
@@ -588,7 +612,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Flashcard:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRZ-Ja-v8D">
                                 <rect key="frame" x="31" y="173" width="225" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -632,10 +656,16 @@
     <resources>
         <image name="clock" catalog="system" width="64" height="60"/>
         <namedColor name="addColor">
-            <color red="0.99900001287460327" green="0.99900001287460327" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.999" green="0.99900001287460327" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="mainColor">
-            <color red="0.97000002861022949" green="0.97100001573562622" blue="0.97100001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96078431372549022" green="0.94901960784313721" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navigationColor">
+            <color red="0.37647058823529411" green="0.37254901960784315" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleColor">
+            <color red="0.16470588235294117" green="0.16078431372549021" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
