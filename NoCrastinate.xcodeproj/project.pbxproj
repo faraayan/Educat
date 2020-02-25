@@ -12,6 +12,7 @@
 		412E4BE3240227F2009149B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412E4BE1240227F2009149B1 /* Main.storyboard */; };
 		4142A5342366B42A00C25827 /* ExpandedFlashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */; };
 		414E16DD236AA31300BD0BEF /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E16DC236AA31300BD0BEF /* Notifications.swift */; };
+		417DE8922404C7E700891445 /* ios_marketing1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 417DE8912404C7E700891445 /* ios_marketing1024x1024.png */; };
 		4186898424036B9600297E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4186898324036B9600297E3A /* Assets.xcassets */; };
 		4186898624038FD000297E3A /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4186898524038FD000297E3A /* Introduction.swift */; };
 		419D9904236619FC00E4E6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D9903236619FC00E4E6C9 /* AppDelegate.swift */; };
@@ -19,7 +20,6 @@
 		419D9908236619FC00E4E6C9 /* Flashcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D9907236619FC00E4E6C9 /* Flashcards.swift */; };
 		419D9910236619FF00E4E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419D990E236619FF00E4E6C9 /* LaunchScreen.storyboard */; };
 		419D992623661B0400E4E6C9 /* AddFlashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D992523661B0400E4E6C9 /* AddFlashcard.swift */; };
-		41C6F349240364B000BC9615 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C6F348240364B000BC9615 /* LaunchImage.png */; };
 		41D46C35236BC11000BB3803 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D46C34236BC11000BB3803 /* Analytics.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,7 @@
 		412E4BE2240227F2009149B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedFlashcard.swift; sourceTree = "<group>"; };
 		414E16DC236AA31300BD0BEF /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		417DE8912404C7E700891445 /* ios_marketing1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_marketing1024x1024.png; sourceTree = "<group>"; };
 		4186898324036B9600297E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4186898524038FD000297E3A /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
 		419D9900236619FC00E4E6C9 /* NoCrastinate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoCrastinate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +51,6 @@
 		419D9916236619FF00E4E6C9 /* NoCrastinateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoCrastinateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		419D991C236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419D992523661B0400E4E6C9 /* AddFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcard.swift; sourceTree = "<group>"; };
-		41C6F348240364B000BC9615 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		41D46C34236BC11000BB3803 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +123,7 @@
 		41C6F34A240364D400BC9615 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				41C6F348240364B000BC9615 /* LaunchImage.png */,
+				417DE8912404C7E700891445 /* ios_marketing1024x1024.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -210,9 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				412E4BE3240227F2009149B1 /* Main.storyboard in Resources */,
+				417DE8922404C7E700891445 /* ios_marketing1024x1024.png in Resources */,
 				419D9910236619FF00E4E6C9 /* LaunchScreen.storyboard in Resources */,
 				4186898424036B9600297E3A /* Assets.xcassets in Resources */,
-				41C6F349240364B000BC9615 /* LaunchImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

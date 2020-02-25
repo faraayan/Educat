@@ -244,7 +244,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" name="addColor"/>
+                        <color key="backgroundColor" name="folderColor"/>
                         <constraints>
                             <constraint firstItem="Oph-D5-prQ" firstAttribute="trailing" secondItem="DMv-oQ-S58" secondAttribute="trailing" constant="150" id="7js-5x-7ck"/>
                             <constraint firstItem="Oph-D5-prQ" firstAttribute="trailing" secondItem="gYL-jS-Wu8" secondAttribute="trailing" constant="58" id="8yM-re-E2i"/>
@@ -355,7 +355,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="mainColor"/>
+                        <color key="backgroundColor" name="analyticsColor"/>
                         <constraints>
                             <constraint firstItem="J3M-ag-vqG" firstAttribute="leading" secondItem="DIt-IT-3wY" secondAttribute="trailing" constant="28" id="3RE-sj-ed7"/>
                             <constraint firstItem="d7n-4B-avX" firstAttribute="leading" secondItem="79v-Ze-PNG" secondAttribute="leading" constant="142" id="6Wj-yQ-Ggq"/>
@@ -569,7 +569,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="expandedFlashcardColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dAF-7Y-I7o" firstAttribute="trailing" secondItem="gBD-nQ-608" secondAttribute="trailing" constant="55" id="BnN-4x-AON"/>
@@ -621,31 +621,33 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Definition" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-Js-Pzc">
                                 <rect key="frame" x="31" y="345" width="298" height="34"/>
+                                <color key="textColor" name="titleColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Term" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLB-Fi-5pk">
                                 <rect key="frame" x="30" y="254" width="299" height="34"/>
+                                <color key="textColor" name="titleColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsW-BG-anN">
                                 <rect key="frame" x="30" y="361" width="315" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-IF-yTG">
                                 <rect key="frame" x="31" y="271" width="314" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3g-rh-uho">
                                 <rect key="frame" x="20" y="59" width="30" height="59"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
                                 <state key="normal" title="✕">
-                                    <color key="titleColor" name="navigationColor"/>
+                                    <color key="titleColor" name="titleColor"/>
                                 </state>
                                 <connections>
                                     <action selector="cancelFlashcard:" destination="uo6-Y2-dfM" eventType="touchUpInside" id="5Et-PW-gDp"/>
@@ -658,7 +660,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Add">
-                                    <color key="titleColor" name="navigationColor"/>
+                                    <color key="titleColor" name="titleColor"/>
                                 </state>
                                 <connections>
                                     <action selector="saveFlashcard:" destination="uo6-Y2-dfM" eventType="touchUpInside" id="8yq-SQ-JtM"/>
@@ -671,7 +673,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="addColor"/>
+                        <color key="backgroundColor" name="flashcardColor"/>
                         <constraints>
                             <constraint firstItem="pLB-Fi-5pk" firstAttribute="trailing" secondItem="QXc-Js-Pzc" secondAttribute="trailing" id="2sg-5T-m8Y"/>
                             <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="50" id="8qB-vy-YBE"/>
@@ -710,11 +712,20 @@
     </scenes>
     <resources>
         <image name="clock" catalog="system" width="64" height="60"/>
-        <namedColor name="addColor">
-            <color red="0.99900001287460327" green="0.99900001287460327" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="analyticsColor">
+            <color red="0.97254901960784312" green="0.96078431372549022" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="darkerColor">
-            <color red="0.92549019607843142" green="0.9137254901960784" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90196078431372551" green="0.88627450980392153" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="expandedFlashcardColor">
+            <color red="1" green="0.999" blue="0.999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="flashcardColor">
+            <color red="0.42745098039215684" green="0.61960784313725492" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="folderColor">
+            <color red="0.61960784313725492" green="0.76078431372549016" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="mainColor">
             <color red="0.96078431372549022" green="0.94901960784313721" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
