@@ -38,6 +38,11 @@ class AddFolder: UIViewController, UITextFieldDelegate {
             flashcardsTerm.append([])
             flashcardsDef.append([])
             remembered.append([])
+            dailyLog.append([])
+            for _ in 1...7{
+                dailyLog[whichFolder].append(false)
+            }
+            print(dailyLog)
             saveData()
             let date = Date()
             let calendar = Calendar.current
@@ -50,6 +55,7 @@ class AddFolder: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(flashcardsDayCreated,forKey:"flashcardDay")
             UserDefaults.standard.set(flashcardsMonthCreated,forKey:"flashcardMonth")
             UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
+            UserDefaults.standard.set(dailyLog, forKey: "dailyLog")
             createTime()
             
             dismiss(animated: true, completion: nil)

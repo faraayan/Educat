@@ -5,19 +5,19 @@
   },
   "colors" : [
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
       "color" : {
         "color-space" : "srgb",
         "components" : {
-          "red" : "0x5F",
+          "red" : "0.800",
           "alpha" : "1.000",
-          "blue" : "0x5C",
-          "green" : "0x5F"
+          "blue" : "0.800",
+          "green" : "0.800"
         }
       }
     },
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -27,10 +27,10 @@
       "color" : {
         "color-space" : "srgb",
         "components" : {
-          "red" : "0.918",
+          "red" : "0.373",
           "alpha" : "1.000",
-          "blue" : "0.875",
-          "green" : "0.902"
+          "blue" : "0.361",
+          "green" : "0.373"
         }
       }
     }

@@ -64,6 +64,9 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        print(dailyLog)
+        dailyLog[whichFolder][getWeekday()-1] = true
+        print(dailyLog)
         flashcardTable.reloadData()
         saveData()
     }

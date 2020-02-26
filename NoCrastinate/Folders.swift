@@ -23,6 +23,7 @@ var hello = 0
 var folderHeaderHeight: CGFloat { 10.0 }
 let foldersNameKey = "foldersName!"
 
+var dailyLog: [[Bool]] = []
 
 func saveData(){
     UserDefaults.standard.set(foldersName,forKey: foldersNameKey)
@@ -32,6 +33,8 @@ func saveData(){
     UserDefaults.standard.set(flashcardsDayCreated,forKey:"flashcardDay")
     UserDefaults.standard.set(flashcardsMonthCreated,forKey:"flashcardMonth")
     UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
+    
+    UserDefaults.standard.set(dailyLog, forKey: "dailyLog")
 }
 
 
@@ -44,6 +47,7 @@ func createData(){
     flashcardsDayCreated = UserDefaults.standard.object(forKey: "flashcardDay") as? [Int] ?? []
     flashcardsMonthCreated = UserDefaults.standard.object(forKey: "flashcardMonth") as? [Int] ?? []
     flashcardsYearCreated = UserDefaults.standard.object(forKey: "flashcardYear") as? [Int] ?? []
+    dailyLog = UserDefaults.standard.object(forKey: "dailyLog") as? [[Bool]] ?? []
 }
 
 class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
@@ -75,6 +79,18 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         folderTable.reloadData()
+        
+        //reset dailyLog if it's monday
+        if getWeekday() == 3{
+            if dailyLog.count != 0{
+                for i in 0 ... (dailyLog.count-1){
+                    for j in 0 ... 6{
+                        dailyLog[i][j] = false
+                    }
+                }
+            }
+            UserDefaults.standard.set(dailyLog, forKey: "dailyLog")
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
