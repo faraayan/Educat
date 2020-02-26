@@ -53,13 +53,15 @@ class DailyLog: UIViewController {
             return fridayLabel
         }else if weekday == 7{
             return saturdayLabel
+        }else{
+            return sundayLabel
         }
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         for i in 0 ... 6{
-            weekdaytoLabel(i+1).text = boolToText(dailyLog[whichFolder][i])
-            weekdaytoLabel(i+1).textColor = UIColor(named: "dailyLogColor")
+            weekdayToLabel(i+1).text =  boolToText(dailyLog[whichFolder][i])
+            weekdayToLabel(i+1).textColor =  UIColor(named: "dailyLogColor")
         }
         weekdayToLabel(getWeekday()).textColor = UIColor(named: "titleColor")
     }
