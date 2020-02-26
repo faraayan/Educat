@@ -13,6 +13,7 @@
 		4142A5342366B42A00C25827 /* ExpandedFlashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */; };
 		414E16DD236AA31300BD0BEF /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E16DC236AA31300BD0BEF /* Notifications.swift */; };
 		417DE8922404C7E700891445 /* ios_marketing1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 417DE8912404C7E700891445 /* ios_marketing1024x1024.png */; };
+		418514EA2406137A00812D1D /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418514E92406137A00812D1D /* DailyLog.swift */; };
 		4186898424036B9600297E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4186898324036B9600297E3A /* Assets.xcassets */; };
 		4186898624038FD000297E3A /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4186898524038FD000297E3A /* Introduction.swift */; };
 		419D9904236619FC00E4E6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D9903236619FC00E4E6C9 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedFlashcard.swift; sourceTree = "<group>"; };
 		414E16DC236AA31300BD0BEF /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		417DE8912404C7E700891445 /* ios_marketing1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_marketing1024x1024.png; sourceTree = "<group>"; };
+		418514E92406137A00812D1D /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
 		4186898324036B9600297E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4186898524038FD000297E3A /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
 		419D9900236619FC00E4E6C9 /* NoCrastinate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoCrastinate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				412E4BE1240227F2009149B1 /* Main.storyboard */,
+				418514E92406137A00812D1D /* DailyLog.swift */,
 				4186898524038FD000297E3A /* Introduction.swift */,
 				4142A5332366B42A00C25827 /* ExpandedFlashcard.swift */,
 				419D9903236619FC00E4E6C9 /* AppDelegate.swift */,
@@ -233,6 +236,7 @@
 				414E16DD236AA31300BD0BEF /* Notifications.swift in Sources */,
 				4186898624038FD000297E3A /* Introduction.swift in Sources */,
 				419D9908236619FC00E4E6C9 /* Flashcards.swift in Sources */,
+				418514EA2406137A00812D1D /* DailyLog.swift in Sources */,
 				41056F892366E51E00A57676 /* Folders.swift in Sources */,
 				4142A5342366B42A00C25827 /* ExpandedFlashcard.swift in Sources */,
 				41D46C35236BC11000BB3803 /* Analytics.swift in Sources */,

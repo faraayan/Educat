@@ -11,11 +11,21 @@ import UIKit
 var symbol = [String]()
 var isSaved = false
 var sectionHeaderHeight: CGFloat { 5.0 }
+var pressed = false
 
 class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
-
     @IBOutlet weak var flashcardLabelName: UILabel!
     @IBOutlet weak var flashcardTable: UITableView!
+    
+    let gesture = UITapGestureRecognizer(target: self, action: #selector(longPressForDailyLog(_:)))
+    
+    @IBAction func longPressForDailyLog(_ sender: Any) {
+        if pressed == false{
+            print("thisRan!")
+            performSegue(withIdentifier: "toDailyLog", sender: nil)
+            pressed = true
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return flashcardsTerm[whichFolder].count
