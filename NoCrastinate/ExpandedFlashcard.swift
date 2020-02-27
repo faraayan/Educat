@@ -20,7 +20,9 @@ class ExpandedFlashcard: UIViewController {
     
     @IBOutlet weak var rememberLabel: UILabel!
     
-    var isHidden = false
+    var isDefHidden = false
+    
+    var isTermHidden = false
     
     @IBAction func didNotRemember(_ sender: Any) {
         remembered[whichFolder][whichFlashcard] = -1
@@ -48,9 +50,9 @@ class ExpandedFlashcard: UIViewController {
         defLabel.addGestureRecognizer(tap)
     
         
-        //Hide label
+        //Hide Def label
         defLabel.textColor = UIColor(named: "flipColorBack")
-        isHidden = true
+        isDefHidden = true
     
         //Create tap recognition for defLabel
         let tapTerm = UITapGestureRecognizer(target: self, action: #selector(ExpandedFlashcard.tapTermFunction))
@@ -58,33 +60,34 @@ class ExpandedFlashcard: UIViewController {
         termLabel.isUserInteractionEnabled = true
         termLabel.addGestureRecognizer(tapTerm)
         
-        //Hide label
-        termLabel.textColor = UIColor(named: "flipColorBack")
-        isHidden = true
+        //Show Term label
+        termLabel.textColor = UIColor(named: "titleColor")
+        termLabel.backgroundColor = UIColor(named: "flipColorFront")
+        isTermHidden = false
 
     }
     
     @IBAction func tapFunction(sender: UITapGestureRecognizer) {
-        if isHidden == false{
+        if isDefHidden == false{
             defLabel.textColor = UIColor(named: "flipColorBack")
             defLabel.backgroundColor = UIColor(named: "flipColorBack")
-            isHidden = true
+            isDefHidden = true
         }else{
             defLabel.textColor = UIColor(named: "titleColor")
             defLabel.backgroundColor = UIColor(named: "flipColorFront")
-            isHidden = false
+            isDefHidden = false
         }
         
     }
     @IBAction func tapTermFunction(sender: UITapGestureRecognizer) {
-        if isHidden == false{
+        if isTermHidden == false{
             termLabel.textColor = UIColor(named: "flipColorBack")
             termLabel.backgroundColor = UIColor(named: "flipColorBack")
-            isHidden = true
+            isTermHidden = true
         }else{
             termLabel.textColor = UIColor(named: "titleColor")
             termLabel.backgroundColor = UIColor(named: "flipColorFront")
-            isHidden = false
+            isTermHidden = false
         }
         
     }
