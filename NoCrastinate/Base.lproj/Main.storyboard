@@ -597,6 +597,13 @@
                                     <segue destination="uo6-Y2-dfM" kind="show" id="RNy-U7-A47"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ai-i9-3ri">
+                                <rect key="frame" x="339" y="57" width="45" height="30"/>
+                                <state key="normal" title="Study!"/>
+                                <connections>
+                                    <action selector="studyFlashcards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzG-dd-iH3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="mainColor"/>
                         <gestureRecognizers/>
@@ -604,6 +611,8 @@
                             <constraint firstAttribute="bottomMargin" secondItem="3XD-Gf-RtN" secondAttribute="bottom" constant="-34" id="0Cf-27-C5O"/>
                             <constraint firstItem="ycd-QZ-EnS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0kg-Xc-A3o"/>
                             <constraint firstItem="v5U-7b-t4i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="F0Y-eA-ik0"/>
+                            <constraint firstItem="5Ai-i9-3ri" firstAttribute="bottom" secondItem="ycd-QZ-EnS" secondAttribute="bottom" id="GMi-vV-3Hi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Ai-i9-3ri" secondAttribute="trailing" constant="30" id="H39-lw-7Vc"/>
                             <constraint firstItem="GRW-If-dKa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JGO-dg-aH8"/>
                             <constraint firstItem="GRW-If-dKa" firstAttribute="leading" secondItem="gIW-jN-8lW" secondAttribute="trailing" constant="27" id="LjZ-1U-pIi"/>
                             <constraint firstItem="3XD-Gf-RtN" firstAttribute="top" secondItem="GRW-If-dKa" secondAttribute="bottom" constant="8" id="M7S-Q4-TE2"/>

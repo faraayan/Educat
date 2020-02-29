@@ -12,6 +12,7 @@ var symbol = [String]()
 var isSaved = false
 var sectionHeaderHeight: CGFloat { 5.0 }
 var pressed = false
+var isInStudyMode = false
 
 class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var flashcardLabelName: UILabel!
@@ -62,12 +63,19 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    @IBAction func studyFlashcards(_ sender: Any) {
+        isInStudyMode = true
+        whichFlashcard = 0
+        performSegue(withIdentifier: "openFlashcardSegue", sender: self)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print(dailyLog)
         dailyLog[whichFolder][getWeekday()-1] = true
         print(dailyLog)
         flashcardTable.reloadData()
+        isInStudyMode = false
         saveData()
     }
     
