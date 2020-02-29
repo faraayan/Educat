@@ -24,6 +24,13 @@ class DailyLog: UIViewController {
     @IBOutlet weak var saturdayLabel: UILabel!
     @IBOutlet weak var sundayLabel: UILabel!
     
+    @IBOutlet weak var monday: UILabel!
+    @IBOutlet weak var tuesday: UILabel!
+    @IBOutlet weak var wednesday: UILabel!
+    @IBOutlet weak var thursday: UILabel!
+    @IBOutlet weak var friday: UILabel!
+    @IBOutlet weak var saturday: UILabel!
+    @IBOutlet weak var sunday: UILabel!
     
     @IBOutlet weak var weekLabel: UILabel!
     
@@ -41,6 +48,7 @@ class DailyLog: UIViewController {
         }
     }
     
+    //Returns the checkbox corresbonding to the int weekday (1-Sunday, 7-Saturday)
     func weekdayToLabel(_ weekday: Int)-> UILabel{
         if weekday == 1{
             return sundayLabel
@@ -60,6 +68,27 @@ class DailyLog: UIViewController {
             return sundayLabel
         }
     }
+    
+   //Returns the text description corresbonding to the int weekday (1-Sunday, 7-Saturday)
+    func weekdayToDayLabel(_ weekday: Int)-> UILabel{
+        if weekday == 1{
+            return sunday
+        }else if weekday == 2{
+            return monday
+        }else if weekday == 3{
+            return tuesday
+        }else if weekday == 4{
+            return wednesday
+        }else if weekday == 5{
+            return thursday
+        }else if weekday == 6{
+            return friday
+        }else if weekday == 7{
+            return saturday
+        }else{
+            return sunday
+        }
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         for i in 0 ... 6{
@@ -67,6 +96,7 @@ class DailyLog: UIViewController {
             weekdayToLabel(i+1).textColor =  UIColor(named: "dailyLogColor")
         }
         weekdayToLabel(getWeekday()).textColor = UIColor(named: "titleColor")
+        weekdayToDayLabel(getWeekday()).textColor = UIColor(named: "titleColor")
         
         //Creates week label
         let date = Date()
