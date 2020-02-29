@@ -19,11 +19,13 @@ var flashcardsDayCreated: [Int] = []
 var flashcardsMonthCreated: [Int] = []
 var flashcardsYearCreated: [Int] = []
 var remembered: [[Int]] = []
-var hello = 0
+var isSavedFolder = false
 var folderHeaderHeight: CGFloat { 10.0 }
 let foldersNameKey = "foldersName!"
 
 var dailyLog: [[Bool]] = []
+
+var notificationTime: [String] = [""]
 
 func saveData(){
     UserDefaults.standard.set(foldersName,forKey: foldersNameKey)
@@ -35,6 +37,8 @@ func saveData(){
     UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
     
     UserDefaults.standard.set(dailyLog, forKey: "dailyLog")
+    
+    UserDefaults.standard.set(notificationTime, forKey: "notificationTime")
 }
 
 
@@ -48,6 +52,7 @@ func createData(){
     flashcardsMonthCreated = UserDefaults.standard.object(forKey: "flashcardMonth") as? [Int] ?? []
     flashcardsYearCreated = UserDefaults.standard.object(forKey: "flashcardYear") as? [Int] ?? []
     dailyLog = UserDefaults.standard.object(forKey: "dailyLog") as? [[Bool]] ?? []
+    notificationTime = UserDefaults.standard.object(forKey: "notificationTime") as? [String] ?? [""]
 }
 
 class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
@@ -100,17 +105,17 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-        if hello == 0{
+        if isSavedFolder == false{
             createData()
         }
         saveData()
         createData()
-        if hello == 1{
+        if isSavedFolder == true{
             userDataF = true
         }
         if userDataF == false{
             UserDefaults.standard.set(foldersName, forKey: foldersNameKey)
-            hello = 1
+            isSavedFolder = true
         }
         folderTable.reloadData()
     }

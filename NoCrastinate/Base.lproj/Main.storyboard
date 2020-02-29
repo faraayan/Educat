@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCS-Ny-rCy">
-                                <rect key="frame" x="46" y="333" width="320" height="216"/>
+                                <rect key="frame" x="46" y="344" width="320" height="216"/>
                                 <color key="backgroundColor" name="mainColor"/>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a time to study everyday!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-bS-6N6">
-                                <rect key="frame" x="46" y="285" width="320" height="24"/>
+                                <rect key="frame" x="46" y="296" width="267.5" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-S2-kWI">
-                                <rect key="frame" x="156" y="557" width="100" height="33"/>
+                                <rect key="frame" x="156" y="568" width="100" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="save">
                                     <color key="titleColor" name="navigationColor"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-hA-YDs">
-                                <rect key="frame" x="25" y="151" width="243" height="62"/>
+                                <rect key="frame" x="25" y="141" width="243" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="rNz-CW-SQj"/>
                                 </constraints>
@@ -56,35 +56,47 @@
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wbX-bD-xJO">
+                                <rect key="frame" x="25" y="211" width="341" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="darkerColor"/>
                         <constraints>
-                            <constraint firstItem="B2b-hA-YDs" firstAttribute="top" secondItem="KqT-um-udr" secondAttribute="bottom" constant="32" id="5WN-8A-qJY"/>
-                            <constraint firstItem="L6i-S2-kWI" firstAttribute="top" secondItem="ZCS-Ny-rCy" secondAttribute="bottom" constant="8" id="COz-6q-OyH"/>
+                            <constraint firstItem="B2b-hA-YDs" firstAttribute="top" secondItem="KqT-um-udr" secondAttribute="bottom" constant="22" id="5WN-8A-qJY"/>
+                            <constraint firstItem="L6i-S2-kWI" firstAttribute="centerX" secondItem="Shj-WQ-FdS" secondAttribute="centerX" constant="-1" id="BcI-s0-iUC"/>
+                            <constraint firstItem="L6i-S2-kWI" firstAttribute="leading" secondItem="DxU-d5-Jpa" secondAttribute="leading" constant="156" id="CFc-z4-Gir"/>
                             <constraint firstItem="B2b-hA-YDs" firstAttribute="leading" secondItem="KqT-um-udr" secondAttribute="leading" id="E2z-1F-3vh"/>
-                            <constraint firstItem="L6i-S2-kWI" firstAttribute="centerX" secondItem="Ca6-bS-6N6" secondAttribute="centerX" id="OrN-59-TWo"/>
                             <constraint firstItem="KqT-um-udr" firstAttribute="top" secondItem="DxU-d5-Jpa" secondAttribute="top" constant="16" id="QtO-np-HlV"/>
-                            <constraint firstItem="Ca6-bS-6N6" firstAttribute="top" secondItem="B2b-hA-YDs" secondAttribute="bottom" constant="72" id="aJh-DP-GMv"/>
-                            <constraint firstItem="L6i-S2-kWI" firstAttribute="leading" secondItem="DxU-d5-Jpa" secondAttribute="leading" constant="156" id="dIl-cS-tqC"/>
-                            <constraint firstItem="DxU-d5-Jpa" firstAttribute="trailing" secondItem="L6i-S2-kWI" secondAttribute="trailing" constant="158" id="gli-e1-wFK"/>
+                            <constraint firstItem="Ca6-bS-6N6" firstAttribute="top" secondItem="B2b-hA-YDs" secondAttribute="bottom" constant="93" id="aJh-DP-GMv"/>
+                            <constraint firstItem="L6i-S2-kWI" firstAttribute="centerY" secondItem="Shj-WQ-FdS" secondAttribute="centerY" constant="136.5" id="baU-ws-Bag"/>
                             <constraint firstItem="DxU-d5-Jpa" firstAttribute="trailing" secondItem="B2b-hA-YDs" secondAttribute="trailing" constant="146" id="hD0-N8-Gd6"/>
                             <constraint firstItem="ZCS-Ny-rCy" firstAttribute="top" secondItem="Ca6-bS-6N6" secondAttribute="bottom" constant="24" id="hsJ-Bv-bjJ"/>
+                            <constraint firstItem="L6i-S2-kWI" firstAttribute="centerX" secondItem="ZCS-Ny-rCy" secondAttribute="centerX" id="l9S-ps-MgU"/>
+                            <constraint firstItem="wbX-bD-xJO" firstAttribute="leading" secondItem="B2b-hA-YDs" secondAttribute="leading" id="nDL-wN-GTp"/>
+                            <constraint firstItem="Ca6-bS-6N6" firstAttribute="top" secondItem="wbX-bD-xJO" secondAttribute="bottom" constant="64" id="p9h-1Q-6Ou"/>
+                            <constraint firstItem="wbX-bD-xJO" firstAttribute="top" secondItem="B2b-hA-YDs" secondAttribute="bottom" constant="8" id="pv7-lK-I8K"/>
                             <constraint firstItem="B2b-hA-YDs" firstAttribute="leading" secondItem="DxU-d5-Jpa" secondAttribute="leading" constant="25" id="r40-J2-9TK"/>
                             <constraint firstItem="ZCS-Ny-rCy" firstAttribute="leading" secondItem="Ca6-bS-6N6" secondAttribute="leading" id="w8H-7b-Qvf"/>
+                            <constraint firstItem="L6i-S2-kWI" firstAttribute="top" secondItem="ZCS-Ny-rCy" secondAttribute="bottom" constant="8" id="wDi-BQ-kIA"/>
                             <constraint firstItem="ZCS-Ny-rCy" firstAttribute="leading" secondItem="DxU-d5-Jpa" secondAttribute="leading" constant="46" id="xRm-Nc-7lG"/>
+                            <constraint firstItem="wbX-bD-xJO" firstAttribute="trailing" secondItem="ZCS-Ny-rCy" secondAttribute="trailing" id="yCk-49-B1B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DxU-d5-Jpa"/>
                     </view>
                     <navigationItem key="navigationItem" id="VDI-Fw-2HY"/>
                     <connections>
+                        <outlet property="datePicker" destination="ZCS-Ny-rCy" id="sCw-yN-Zo2"/>
+                        <outlet property="pastNotificationSetting" destination="wbX-bD-xJO" id="qgy-uz-nw0"/>
                         <outlet property="studyLabel" destination="Ca6-bS-6N6" id="cMG-pR-gt1"/>
-                        <outlet property="timeOfNotification" destination="ZCS-Ny-rCy" id="0CM-nC-w2U"/>
                         <outlet property="titleLabel" destination="B2b-hA-YDs" id="mc4-A1-DjF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTW-CA-ZHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1810" y="-1217"/>
+            <point key="canvasLocation" x="-1810.144927536232" y="-1217.4107142857142"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="zMy-nC-v55">

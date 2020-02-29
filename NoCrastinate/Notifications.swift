@@ -9,16 +9,18 @@
 import UIKit
 import UserNotifications
 
-var myStringArr = [String()]
 
 class Notifications: UIViewController {
     @IBOutlet weak var studyLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var timeOfNotification: UIDatePicker!
-
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     @IBAction func cancelNotification(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBOutlet weak var pastNotificationSetting: UILabel!
     
     @IBAction func saveNotificationTime(_ sender: Any){
         let center = UNUserNotificationCenter.current()
@@ -29,22 +31,24 @@ class Notifications: UIViewController {
         content.body = "Stay on track with memorizing your study sets"
         
         //Store notification time
-        let selectedDate = timeOfNotification.date
+        let selectedDate = datePicker.date
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss"
         let dateFormattedString = dateFormatter.string(from: selectedDate)
-        var myStringArr = dateFormattedString.components(separatedBy: ":")
+        
+        notificationTime = dateFormattedString.components(separatedBy: ":")
+        UserDefaults.standard.set(notificationTime, forKey: "notificationTime")
+        
         let gregorian = Calendar(identifier: .gregorian)
         var components = gregorian.dateComponents([.hour, .minute, .second], from: Date())
-        components.hour = Int(myStringArr[0])
-        components.minute = Int(myStringArr[1])
-        myStringArr[2] = "0"
-        components.second = Int(myStringArr[2])
-        UserDefaults.standard.set(myStringArr, forKey: "NotificationTime")
+        components.hour = Int(notificationTime[0])
+        components.minute = Int(notificationTime[1])
+        notificationTime[2] = "0"
+        components.second = Int(notificationTime[2])
         
         //Create daily notification
-        let date = gregorian.date(from: components)!
-        let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: date)
+        let notificationDate = gregorian.date(from: components)!
+        let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: notificationDate)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
         let request = UNNotificationRequest(identifier:"segueN", content: content, trigger: trigger)
 
@@ -57,11 +61,27 @@ class Notifications: UIViewController {
     }
 
     override func viewDidLoad(){
+        print("Ran here")
         super.viewDidLoad()
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
         }
-        
+        print("Ran")
+        print(notificationTime)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if notificationTime.count>1{
+            if Int(notificationTime[0])!>12{
+                pastNotificationSetting.text = "(Your notifications are currently set for " + String(Int(notificationTime[0])!-12) + ":" + String(notificationTime[1]) + "PM)"
+            }else{
+                pastNotificationSetting.text = "(Your notifications are currently set for " + String(notificationTime[0]) + ":" + String(notificationTime[1]) + "AM)"
+            }
+        }else{
+            pastNotificationSetting.text = ""
+        }
+        print(notificationTime)
+        //pastNotificationSetting.text = String(myStringArr[0])
     }
     
 }
