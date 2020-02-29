@@ -63,10 +63,14 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    @IBOutlet weak var studyFlashcard: UIButton!
+    
     @IBAction func studyFlashcards(_ sender: Any) {
         isInStudyMode = true
-        whichFlashcard = 0
-        performSegue(withIdentifier: "openFlashcardSegue", sender: self)
+        if flashcardsTerm[whichFolder].count != 0{
+            whichFlashcard = 0
+            performSegue(withIdentifier: "openFlashcardSegue", sender: self)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
