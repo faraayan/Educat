@@ -114,116 +114,116 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-ZO-fHE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-ZO-fHE">
                                 <rect key="frame" x="44" y="180" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emA-Sp-EUU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emA-Sp-EUU">
                                 <rect key="frame" x="44" y="262" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-ME-ctG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-ME-ctG">
                                 <rect key="frame" x="44" y="339" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I3-4T-ljQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I3-4T-ljQ">
                                 <rect key="frame" x="44" y="414" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7s-J9-GM4">
-                                <rect key="frame" x="47" y="499" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7s-J9-GM4">
+                                <rect key="frame" x="44" y="499" width="37" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-4M-Wmo">
-                                <rect key="frame" x="47" y="583" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-4M-Wmo">
+                                <rect key="frame" x="44" y="583" width="37" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-Tx-3te">
-                                <rect key="frame" x="47" y="679" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
-                                <color key="textColor" name="dailyLogColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgB-EP-Cgc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgB-EP-Cgc">
                                 <rect key="frame" x="94" y="305" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="gF9-Y8-XVR"/>
+                                    <constraint firstAttribute="height" id="ug4-ht-sqW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyh-2o-Bfd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyh-2o-Bfd">
                                 <rect key="frame" x="127" y="187" width="111" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gO-X3-ssc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gO-X3-ssc">
                                 <rect key="frame" x="127" y="266" width="110" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOk-3U-eAw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOk-3U-eAw">
                                 <rect key="frame" x="127" y="343" width="159" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="THY-xr-h2l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF2-yW-Dfq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF2-yW-Dfq">
                                 <rect key="frame" x="127" y="418" width="124" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-QO-b4P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-QO-b4P">
                                 <rect key="frame" x="127" y="503" width="85" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Elu-Fq-HCa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEK-6u-pKs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEK-6u-pKs">
                                 <rect key="frame" x="127" y="587" width="120" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex6-ws-QSi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex6-ws-QSi">
                                 <rect key="frame" x="127" y="683" width="99" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="40N-g9-0zX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                 <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYV-ha-40S">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYV-ha-40S">
                                 <rect key="frame" x="55" y="84" width="243" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="IEP-Ck-6Hb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-Tx-3te">
+                                <rect key="frame" x="44" y="679" width="37" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" name="dailyLogColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -232,6 +232,60 @@
                             <accessibilityTraits key="traits" notEnabled="YES"/>
                         </accessibility>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="emA-Sp-EUU" firstAttribute="centerY" secondItem="1gO-X3-ssc" secondAttribute="centerY" id="0tj-8a-KVK"/>
+                            <constraint firstItem="7I3-4T-ljQ" firstAttribute="centerY" secondItem="CF2-yW-Dfq" secondAttribute="centerY" id="1rK-tb-Xft"/>
+                            <constraint firstItem="XYV-ha-40S" firstAttribute="leading" secondItem="46p-f5-qXz" secondAttribute="leading" constant="55" id="25T-Xj-e7s"/>
+                            <constraint firstItem="46p-f5-qXz" firstAttribute="bottom" secondItem="Xeh-Tx-3te" secondAttribute="bottom" constant="135" id="3fj-oB-9aT"/>
+                            <constraint firstItem="oyh-2o-Bfd" firstAttribute="leading" secondItem="1gO-X3-ssc" secondAttribute="leading" id="3rm-KH-E4Q"/>
+                            <constraint firstItem="46p-f5-qXz" firstAttribute="trailing" secondItem="ex6-ws-QSi" secondAttribute="trailing" constant="188" id="4Vl-p2-HIt"/>
+                            <constraint firstItem="y5U-QO-b4P" firstAttribute="leading" secondItem="uEK-6u-pKs" secondAttribute="leading" id="5dM-kA-Uxo"/>
+                            <constraint firstItem="ex6-ws-QSi" firstAttribute="top" secondItem="uEK-6u-pKs" secondAttribute="bottom" constant="55" id="9Z6-co-YGf"/>
+                            <constraint firstItem="46p-f5-qXz" firstAttribute="trailing" secondItem="uEK-6u-pKs" secondAttribute="trailing" constant="167" id="AaM-Gi-M6B"/>
+                            <constraint firstItem="XYV-ha-40S" firstAttribute="centerX" secondItem="ex6-ws-QSi" secondAttribute="centerX" id="Am8-HM-Rv8"/>
+                            <constraint firstItem="CF2-yW-Dfq" firstAttribute="top" secondItem="tOk-3U-eAw" secondAttribute="bottom" constant="34" id="CIQ-UN-dS3"/>
+                            <constraint firstItem="46p-f5-qXz" firstAttribute="trailing" secondItem="CF2-yW-Dfq" secondAttribute="trailing" constant="163" id="CWx-oy-97X"/>
+                            <constraint firstItem="46p-f5-qXz" firstAttribute="trailing" secondItem="y5U-QO-b4P" secondAttribute="trailing" constant="202" id="Iwi-A3-0bh"/>
+                            <constraint firstItem="vHv-4M-Wmo" firstAttribute="centerY" secondItem="uEK-6u-pKs" secondAttribute="centerY" id="J1E-57-66q"/>
+                            <constraint firstItem="Lbe-ME-ctG" firstAttribute="top" secondItem="emA-Sp-EUU" secondAttribute="bottom" constant="29" id="MnE-ue-Gj2"/>
+                            <constraint firstItem="b7s-J9-GM4" firstAttribute="centerY" secondItem="y5U-QO-b4P" secondAttribute="centerY" id="NOD-ui-ahu"/>
+                            <constraint firstItem="Lbe-ME-ctG" firstAttribute="trailing" secondItem="7I3-4T-ljQ" secondAttribute="trailing" id="NgQ-xf-woX"/>
+                            <constraint firstItem="Lbe-ME-ctG" firstAttribute="centerY" secondItem="tOk-3U-eAw" secondAttribute="centerY" id="Qug-nR-WFM"/>
+                            <constraint firstItem="QMI-ZO-fHE" firstAttribute="bottom" secondItem="oyh-2o-Bfd" secondAttribute="bottom" id="S03-9U-ker"/>
+                            <constraint firstItem="b7s-J9-GM4" firstAttribute="leading" secondItem="vHv-4M-Wmo" secondAttribute="leading" id="UgC-zB-oRc"/>
+                            <constraint firstItem="Lbe-ME-ctG" firstAttribute="leading" secondItem="7I3-4T-ljQ" secondAttribute="leading" id="VT1-mq-ofS"/>
+                            <constraint firstItem="oyh-2o-Bfd" firstAttribute="leading" secondItem="QMI-ZO-fHE" secondAttribute="trailing" constant="46" id="VZ0-l5-5NA"/>
+                            <constraint firstItem="1gO-X3-ssc" firstAttribute="leading" secondItem="tOk-3U-eAw" secondAttribute="leading" id="X5M-iS-aur"/>
+                            <constraint firstItem="CF2-yW-Dfq" firstAttribute="leading" secondItem="y5U-QO-b4P" secondAttribute="leading" id="XJE-Pa-ob0"/>
+                            <constraint firstItem="46p-f5-qXz" firstAttribute="trailing" secondItem="tOk-3U-eAw" secondAttribute="trailing" constant="128" id="Xdb-aR-Xzg"/>
+                            <constraint firstItem="y5U-QO-b4P" firstAttribute="top" secondItem="CF2-yW-Dfq" secondAttribute="bottom" constant="44" id="Zf0-yc-ePs"/>
+                            <constraint firstItem="Xeh-Tx-3te" firstAttribute="top" secondItem="vHv-4M-Wmo" secondAttribute="bottom" constant="48" id="aOh-K2-8X5"/>
+                            <constraint firstItem="tOk-3U-eAw" firstAttribute="centerX" secondItem="FPT-nT-c3T" secondAttribute="centerX" id="as0-GS-eSg"/>
+                            <constraint firstItem="vHv-4M-Wmo" firstAttribute="top" secondItem="b7s-J9-GM4" secondAttribute="bottom" constant="36" id="cpy-1I-dHF"/>
+                            <constraint firstItem="Xeh-Tx-3te" firstAttribute="centerY" secondItem="ex6-ws-QSi" secondAttribute="centerY" id="dkv-rR-gnZ"/>
+                            <constraint firstItem="46p-f5-qXz" firstAttribute="trailing" secondItem="oyh-2o-Bfd" secondAttribute="trailing" constant="176" id="dze-2X-Jeo"/>
+                            <constraint firstItem="1gO-X3-ssc" firstAttribute="top" secondItem="oyh-2o-Bfd" secondAttribute="bottom" constant="38" id="eCu-L0-kkH"/>
+                            <constraint firstItem="XYV-ha-40S" firstAttribute="top" secondItem="46p-f5-qXz" secondAttribute="top" constant="40" id="fXk-SK-gRG"/>
+                            <constraint firstItem="QgB-EP-Cgc" firstAttribute="leading" secondItem="FPT-nT-c3T" secondAttribute="leadingMargin" constant="74" id="fhC-w2-QAY"/>
+                            <constraint firstItem="uEK-6u-pKs" firstAttribute="leading" secondItem="ex6-ws-QSi" secondAttribute="leading" id="h9G-Xy-m3E"/>
+                            <constraint firstItem="y5U-QO-b4P" firstAttribute="leading" secondItem="b7s-J9-GM4" secondAttribute="trailing" constant="46" id="hGu-Uc-5Mx"/>
+                            <constraint firstItem="emA-Sp-EUU" firstAttribute="leading" secondItem="Lbe-ME-ctG" secondAttribute="leading" id="jCc-y0-EIP"/>
+                            <constraint firstItem="QgB-EP-Cgc" firstAttribute="top" secondItem="FPT-nT-c3T" secondAttribute="top" constant="305" id="jRy-As-jce"/>
+                            <constraint firstItem="emA-Sp-EUU" firstAttribute="top" secondItem="QMI-ZO-fHE" secondAttribute="bottom" constant="34" id="k4j-K1-PbZ"/>
+                            <constraint firstItem="vHv-4M-Wmo" firstAttribute="trailing" secondItem="Xeh-Tx-3te" secondAttribute="trailing" id="k9a-Tk-LP6"/>
+                            <constraint firstItem="vHv-4M-Wmo" firstAttribute="leading" secondItem="Xeh-Tx-3te" secondAttribute="leading" id="lcR-ex-sZm"/>
+                            <constraint firstItem="b7s-J9-GM4" firstAttribute="top" secondItem="7I3-4T-ljQ" secondAttribute="bottom" constant="37" id="m6i-oy-oNb"/>
+                            <constraint firstItem="7I3-4T-ljQ" firstAttribute="top" secondItem="Lbe-ME-ctG" secondAttribute="bottom" constant="27" id="mHT-xV-GNg"/>
+                            <constraint firstItem="b7s-J9-GM4" firstAttribute="trailing" secondItem="vHv-4M-Wmo" secondAttribute="trailing" id="mjF-me-d0a"/>
+                            <constraint firstItem="uEK-6u-pKs" firstAttribute="top" secondItem="y5U-QO-b4P" secondAttribute="bottom" constant="43" id="o6R-R6-TdX"/>
+                            <constraint firstItem="QMI-ZO-fHE" firstAttribute="leading" secondItem="emA-Sp-EUU" secondAttribute="leading" id="p9P-ls-6aa"/>
+                            <constraint firstItem="QMI-ZO-fHE" firstAttribute="leading" secondItem="46p-f5-qXz" secondAttribute="leading" constant="44" id="pU3-vD-GhH"/>
+                            <constraint firstItem="b7s-J9-GM4" firstAttribute="leading" secondItem="46p-f5-qXz" secondAttribute="leading" constant="44" id="pYz-4h-BVU"/>
+                            <constraint firstItem="QMI-ZO-fHE" firstAttribute="trailing" secondItem="emA-Sp-EUU" secondAttribute="trailing" id="quc-dN-YAd"/>
+                            <constraint firstItem="tOk-3U-eAw" firstAttribute="leading" secondItem="CF2-yW-Dfq" secondAttribute="leading" id="u8g-SI-a75"/>
+                            <constraint firstItem="tOk-3U-eAw" firstAttribute="top" secondItem="1gO-X3-ssc" secondAttribute="bottom" constant="36" id="vBl-a9-MuC"/>
+                            <constraint firstItem="emA-Sp-EUU" firstAttribute="trailing" secondItem="Lbe-ME-ctG" secondAttribute="trailing" id="yfj-yU-Ksu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="46p-f5-qXz"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="eJv-q4-ez6" appends="YES" id="LsP-sz-ma5"/>
@@ -246,6 +300,7 @@
                         <outlet property="thursdayLabel" destination="7I3-4T-ljQ" id="X4T-xA-Vnp"/>
                         <outlet property="tuesdayLabel" destination="emA-Sp-EUU" id="hMr-H4-aBH"/>
                         <outlet property="wednesdayLabel" destination="Lbe-ME-ctG" id="nXR-8B-aud"/>
+                        <outlet property="weekLabel" destination="XYV-ha-40S" id="Vnw-jo-Roi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNN-aD-Wcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
