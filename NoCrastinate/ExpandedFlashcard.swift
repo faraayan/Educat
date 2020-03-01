@@ -20,6 +20,7 @@ class ExpandedFlashcard: UIViewController {
     
     @IBOutlet weak var rememberLabel: UILabel!
     
+    @IBOutlet weak var defScrollView: UIScrollView!
     var isDefHidden = false
     
     var isTermHidden = false
@@ -66,10 +67,10 @@ class ExpandedFlashcard: UIViewController {
     
         //Create tap recognition for defLabel
         let tap = UITapGestureRecognizer(target: self, action: #selector(ExpandedFlashcard.tapFunction))
-        defLabel.frame = defLabel.bounds
+        defLabel.numberOfLines = 0;
         defLabel.isUserInteractionEnabled = true
         defLabel.addGestureRecognizer(tap)
-    
+        defScrollView.addGestureRecognizer(tap)
         
         //Hide Def label
         defLabel.textColor = UIColor(named: "flipColorBack")
@@ -85,6 +86,9 @@ class ExpandedFlashcard: UIViewController {
         termLabel.textColor = UIColor(named: "titleColor")
         termLabel.backgroundColor = UIColor(named: "flipColorFront")
         isTermHidden = false
+    
+        defScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: defLabel.bottomAnchor).isActive = true
+    defScrollView.isScrollEnabled = true
 
     }
     
@@ -95,7 +99,9 @@ class ExpandedFlashcard: UIViewController {
         isTermHidden = false
         defLabel.textColor = UIColor(named: "flipColorBack")
         defLabel.backgroundColor = UIColor(named: "flipColorBack")
+        defScrollView.backgroundColor = UIColor(named: "flipColorBack")
         isDefHidden = true
+        defScrollView.isScrollEnabled = true
     }
     
     //Makes the flashcard definition hide/show when tapped
@@ -103,10 +109,14 @@ class ExpandedFlashcard: UIViewController {
         if isDefHidden == false{
             defLabel.textColor = UIColor(named: "flipColorBack")
             defLabel.backgroundColor = UIColor(named: "flipColorBack")
+            defScrollView.backgroundColor = UIColor(named: "flipColorBack")
+            defScrollView.isScrollEnabled = true
             isDefHidden = true
         }else{
+            defScrollView.isScrollEnabled = true
             defLabel.textColor = UIColor(named: "titleColor")
             defLabel.backgroundColor = UIColor(named: "flipColorFront")
+            defScrollView.backgroundColor = UIColor(named: "flipColorFront")
             isDefHidden = false
         }
     }
