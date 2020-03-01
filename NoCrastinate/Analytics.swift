@@ -41,6 +41,9 @@ class Analytics: UIViewController{
         for element in remembered[whichFolder]{
             if element == -1{
                 termsMissed+=1
+            }else if element == 0{
+                termsMissed+=1
+                
             }
         }
         for definition in flashcardsDef[whichFolder] {
@@ -56,12 +59,9 @@ class Analytics: UIViewController{
             daysSinceCreation = 1
         }
         let numOfRepititions = 3.0/Double(daysSinceCreation)
-        print(numOfRepititions)
         let minToRead = Double(charCount)/600
-        print(minToRead)
         let additionalMinToRead = Double(termsMissed)*(avgCharCount/Double(600))
         let numOfMinutes = round(Double(numOfRepititions * minToRead + additionalMinToRead)*Double(100.0))
-        print(Double(numOfMinutes / 100))
         if (numOfMinutes / 100).isNaN{
             recTimeLabel.text = "0.00"
         }
@@ -69,7 +69,8 @@ class Analytics: UIViewController{
             recTimeLabel.text = String(Double(numOfMinutes/100))
         }
         if flashcardsTerm[whichFolder].count > 0 {
-            percentofMasteryLabel.text = String(Int((flashcardsTerm[whichFolder].count - termsMissed)/flashcardsTerm[whichFolder].count)*100)
+            percentofMasteryLabel.text = String(Int(CGFloat(flashcardsTerm[whichFolder].count - termsMissed)/CGFloat(flashcardsTerm[whichFolder].count)*100.00))
+            
         }else{
             percentofMasteryLabel.text = "0"
         }
