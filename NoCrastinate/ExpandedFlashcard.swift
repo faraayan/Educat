@@ -21,6 +21,7 @@ class ExpandedFlashcard: UIViewController {
     @IBOutlet weak var rememberLabel: UILabel!
     
     @IBOutlet weak var defScrollView: UIScrollView!
+    @IBOutlet weak var termScrollView: UIScrollView!
     var isDefHidden = false
     
     var isTermHidden = false
@@ -81,6 +82,7 @@ class ExpandedFlashcard: UIViewController {
         termLabel.frame = defLabel.bounds
         termLabel.isUserInteractionEnabled = true
         termLabel.addGestureRecognizer(tapTerm)
+        termScrollView.addGestureRecognizer(tapTerm)
         
         //Show Term label
         termLabel.textColor = UIColor(named: "titleColor")
@@ -89,6 +91,9 @@ class ExpandedFlashcard: UIViewController {
     
         defScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: defLabel.bottomAnchor).isActive = true
     defScrollView.isScrollEnabled = false
+    
+    termScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: termLabel.bottomAnchor).isActive = true
+    termScrollView.isScrollEnabled = true
 
     }
     
@@ -102,6 +107,9 @@ class ExpandedFlashcard: UIViewController {
         defScrollView.backgroundColor = UIColor(named: "flipColorBack")
         isDefHidden = true
         defScrollView.isScrollEnabled = false
+        
+        termScrollView.backgroundColor = UIColor(named: "flipColorFront")
+        termScrollView.isScrollEnabled = true
     }
     
     //Makes the flashcard definition hide/show when tapped
@@ -113,7 +121,7 @@ class ExpandedFlashcard: UIViewController {
             defScrollView.isScrollEnabled = false
             isDefHidden = true
         }else{
-            defScrollView.isScrollEnabled = true
+            defScrollView.backgroundColor = UIColor(named: "flipColorFront")
             defLabel.textColor = UIColor(named: "titleColor")
             defLabel.backgroundColor = UIColor(named: "flipColorFront")
             defScrollView.backgroundColor = UIColor(named: "flipColorFront")
@@ -126,9 +134,13 @@ class ExpandedFlashcard: UIViewController {
         if isTermHidden == false{
             termLabel.textColor = UIColor(named: "flipColorBack")
             termLabel.backgroundColor = UIColor(named: "flipColorBack")
+            termScrollView.backgroundColor = UIColor(named: "flipColorBack")
+            termScrollView.isScrollEnabled = false
             isTermHidden = true
         }else{
             termLabel.textColor = UIColor(named: "titleColor")
+            termScrollView.isScrollEnabled = true
+            termScrollView.backgroundColor = UIColor(named: "flipColorFront")
             termLabel.backgroundColor = UIColor(named: "flipColorFront")
             isTermHidden = false
         }
