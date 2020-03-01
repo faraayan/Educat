@@ -46,6 +46,7 @@ class ExpandedFlashcard: UIViewController {
     }
     
     //"No" Button
+    
     @IBAction func didNotRemember(_ sender: Any) {
         remembered[whichFolder][whichFlashcard] = -1
         UserDefaults.standard.set(remembered, forKey: "remembered")
@@ -53,7 +54,7 @@ class ExpandedFlashcard: UIViewController {
         toNextFlashcard()
     }
     
-    //"Yes" button
+    
     @IBAction func didRemember(_ sender: Any) {
         remembered[whichFolder][whichFlashcard] = 1
         UserDefaults.standard.set(remembered, forKey: "remembered")

@@ -97,22 +97,6 @@ class DailyLog: UIViewController {
         }
         weekdayToLabel(getWeekday()).textColor = UIColor(named: "titleColor")
         weekdayToDayLabel(getWeekday()).textColor = UIColor(named: "titleColor")
-        
-        //Creates week label
-        let date = Date()
-        let calendar = Calendar.current
-        let month = calendar.component(.month, from: date)
-        let day = calendar.component(.day, from: date)
-        
-        var startingDay = 0
-        if getWeekday() == 1{
-            startingDay = day-6
-        }else{
-            startingDay = (day-getWeekday())+2
-            print(day)
-            print(getWeekday())
-        }
-        weekLabel.text = String(month) + "/" + String(startingDay) + " - "
     }
 
     override func viewDidLoad() {
