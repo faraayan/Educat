@@ -1,0 +1,16 @@
+PODS:
+  - paper-onboarding (6.1.4)
+
+DEPENDENCIES:
+  - paper-onboarding
+
+SPEC REPOS:
+  trunk:
+    - paper-onboarding
+
+SPEC CHECKSUMS:
+  paper-onboarding: d3f16416e6f42add686117e8b32bfffaad899a79
+
+PODFILE CHECKSUM: 331dd0a324d46de0a3f2d9d2fcce5187ca3e3b7e
+
+COCOAPODS: 1.9.0
