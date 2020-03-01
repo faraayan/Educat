@@ -88,7 +88,7 @@ class ExpandedFlashcard: UIViewController {
         isTermHidden = false
     
         defScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: defLabel.bottomAnchor).isActive = true
-    defScrollView.isScrollEnabled = true
+    defScrollView.isScrollEnabled = false
 
     }
     
@@ -101,7 +101,7 @@ class ExpandedFlashcard: UIViewController {
         defLabel.backgroundColor = UIColor(named: "flipColorBack")
         defScrollView.backgroundColor = UIColor(named: "flipColorBack")
         isDefHidden = true
-        defScrollView.isScrollEnabled = true
+        defScrollView.isScrollEnabled = false
     }
     
     //Makes the flashcard definition hide/show when tapped
@@ -110,7 +110,7 @@ class ExpandedFlashcard: UIViewController {
             defLabel.textColor = UIColor(named: "flipColorBack")
             defLabel.backgroundColor = UIColor(named: "flipColorBack")
             defScrollView.backgroundColor = UIColor(named: "flipColorBack")
-            defScrollView.isScrollEnabled = true
+            defScrollView.isScrollEnabled = false
             isDefHidden = true
         }else{
             defScrollView.isScrollEnabled = true
