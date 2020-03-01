@@ -142,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-4M-Wmo">
-                                <rect key="frame" x="50" y="486.33333333333331" width="31" height="40.333333333333314"/>
+                                <rect key="frame" x="50" y="486.33333333333331" width="31" height="34.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vHv-4M-Wmo" secondAttribute="height" multiplier="37:48" id="ScV-2k-db3"/>
                                 </constraints>
@@ -151,7 +151,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-Tx-3te">
-                                <rect key="frame" x="50" y="549.66666666666663" width="31" height="34.333333333333371"/>
+                                <rect key="frame" x="50" y="543.66666666666663" width="31" height="40.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xeh-Tx-3te" secondAttribute="height" multiplier="37:48" id="ebG-IW-ye6"/>
                                 </constraints>
@@ -215,7 +215,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="uEK-6u-pKs">
-                                <rect key="frame" x="127" y="486.33333333333331" width="205" height="40.333333333333314"/>
+                                <rect key="frame" x="126.99999999999999" y="486.33333333333331" width="179.66666666666663" height="34.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uEK-6u-pKs" secondAttribute="height" multiplier="205:48" constant="33" id="fC7-m0-diP"/>
                                 </constraints>
@@ -224,7 +224,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ex6-ws-QSi">
-                                <rect key="frame" x="126.99999999999999" y="549.66666666666663" width="179.66666666666663" height="34.333333333333371"/>
+                                <rect key="frame" x="127" y="543.66666666666663" width="205" height="40.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ex6-ws-QSi" secondAttribute="height" multiplier="205:48" constant="33" id="HHN-lj-0bO"/>
                                 </constraints>
@@ -846,7 +846,7 @@
                                 <rect key="frame" x="58" y="105" width="259" height="124"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="298" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-Ya-5Ij" customClass="EdgeInsetLabel" customModule="NoCrastinate" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="259" height="44.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="24.333333333333332"/>
                                         <color key="backgroundColor" name="flipColorBack"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
@@ -879,7 +879,7 @@
                                     <constraint firstItem="F8F-Ya-5Ij" firstAttribute="centerX" secondItem="fxi-VO-CDY" secondAttribute="centerX" id="xss-M3-eYC"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="top" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QjM-PF-cTy">
+                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QjM-PF-cTy">
                                 <rect key="frame" x="219" y="689" width="89" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QjM-PF-cTy" secondAttribute="height" multiplier="1:1" id="AiV-Q6-eIK"/>
@@ -891,7 +891,7 @@
                                     <action selector="didRemember:" destination="99e-2t-lFW" eventType="touchUpInside" id="BhK-gh-gs1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="top" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ina-20-MXc">
+                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ina-20-MXc">
                                 <rect key="frame" x="74" y="694" width="2" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ina-20-MXc" secondAttribute="height" multiplier="1:1" id="Xmw-N4-zK7"/>

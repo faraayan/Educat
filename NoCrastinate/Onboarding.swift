@@ -9,13 +9,22 @@
 import Foundation
 import UIKit
 import paper_onboarding
-var completeOnboarding = false
+var completeOnboarding: Bool = false
 
 class Onboarding: UIViewController{
 
-    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.value(forKey: "completeOnboarding") as? Bool == true{
+            performSegue(withIdentifier: "toApp", sender: self)
+        }
+        super.viewDidAppear(animated)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserDefaults.standard.value(forKey: "completeOnboarding") as? Bool == false{
+            completeOnboarding = UserDefaults.standard.object(forKey: "completeOnboarding") as? Bool ?? false
+            UserDefaults.standard.set(completeOnboarding, forKey: "completeOnboarding")
+        }
           let onboarding = PaperOnboarding()
           onboarding.dataSource = self
           onboarding.translatesAutoresizingMaskIntoConstraints = false
@@ -44,6 +53,8 @@ class Onboarding: UIViewController{
     }
     @objc func buttonClicked(sender : UIButton){
         completeOnboarding = true
+        UserDefaults.standard.set(completeOnboarding, forKey: "completeOnboarding")
+        print(UserDefaults.standard.value(forKey: "completeOnboarding") as? Bool? as Any)
         performSegue(withIdentifier: "toApp", sender: nil)
     }
 

@@ -83,6 +83,7 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        print("ran")
         folderTable.reloadData()
         
         //reset dailyLog if it's monday
