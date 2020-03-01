@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import paper_onboarding
+var completeOnboarding = false
 
 class Onboarding: UIViewController{
 
@@ -31,8 +32,24 @@ class Onboarding: UIViewController{
                                                 constant: 0)
             view.addConstraint(constraint)
         }
+        let button = UIButton(frame: CGRect(x: 270, y: 80, width: 80, height: 50))
+            button.backgroundColor = UIColor(named:"transparentWhite")
+            button.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+            button.setTitle(NSLocalizedString("Begin", comment: ""), for: .normal)
+            button.translatesAutoresizingMaskIntoConstraints = true
+            button.titleLabel?.font =  UIFont(name: "avenir-medium", size: 20)
+            button.layer.cornerRadius = 5
+            button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
+            view.addSubview(button)
     }
+    @objc func buttonClicked(sender : UIButton){
+        completeOnboarding = true
+        performSegue(withIdentifier: "toApp", sender: nil)
+    }
+
+
 }
+
     
 
 

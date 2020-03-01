@@ -14,10 +14,9 @@ import UIKit
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        /*
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var vc: UIViewController
+        /*var vc: UIViewController
         if(UserDefaults.standard.value(forKey: "name") as? String) == nil{
             vc = storyboard.instantiateViewController(withIdentifier: "Introduction")
             print("did this")
@@ -26,10 +25,9 @@ import UIKit
             vc = storyboard.instantiateInitialViewController()!
             print("did that")
         }
-        
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "Introduction")
-        self.window?.makeKeyAndVisible()
         */
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "start")
+        self.window?.makeKeyAndVisible()
         return true
     }
 
