@@ -93,10 +93,12 @@ class DailyLog: UIViewController {
         super.viewDidAppear(animated)
         for i in 0 ... 6{
             weekdayToLabel(i+1).text =  boolToText(dailyLog[whichFolder][i])
-            weekdayToLabel(i+1).textColor =  UIColor(named: "dailyLogColor")
+            weekdayToLabel(i+1).textColor =  UIColor(named: "dailyLogLight")
+            weekdayToDayLabel(i+1).textColor = UIColor(named: "dailyLogLight")
         }
-        weekdayToLabel(getWeekday()).textColor = UIColor(named: "titleColor")
-        weekdayToDayLabel(getWeekday()).textColor = UIColor(named: "titleColor")
+        weekdayToLabel(getWeekday()).textColor = UIColor(named: "navigationColor")
+        weekdayToDayLabel(getWeekday()).textColor = UIColor(named: "navigationColor")
+        weekLabel.textColor = UIColor(named: "navigationColor")
     }
 
     override func viewDidLoad() {

@@ -21,7 +21,7 @@ public struct OnboardingItemInfo {
     public let descriptionLabelPadding: CGFloat
     public let titleLabelPadding: CGFloat
     
-    public init (informationImage: UIImage, title: String, description: String, pageIcon: UIImage, color: UIColor, titleColor: UIColor, descriptionColor: UIColor, titleFont: UIFont, descriptionFont: UIFont, descriptionLabelPadding: CGFloat = 10, titleLabelPadding: CGFloat = 10) {
+    public init (informationImage: UIImage, title: String, description: String, pageIcon: UIImage, color: UIColor, titleColor: UIColor, descriptionColor: UIColor, titleFont: UIFont, descriptionFont: UIFont, descriptionLabelPadding: CGFloat = 20, titleLabelPadding: CGFloat = 20) {
         self.informationImage = informationImage
         self.title = title
         self.description = description
