@@ -66,12 +66,13 @@ class Onboarding: UIViewController{
 
 extension Onboarding: PaperOnboardingDataSource {
     func onboardingItem(at index: Int) -> OnboardingItemInfo {
-        let bgOne = #colorLiteral(red: 0.7522197974, green: 0.9085828, blue: 0.8001499382, alpha: 1)
-        let bgTwo = #colorLiteral(red: 0.7829809449, green: 0.9333210804, blue: 1, alpha: 1)
-        let bgThree = #colorLiteral(red: 0.8412451069, green: 0.8248372556, blue: 1, alpha: 1)
-        let bgFour = #colorLiteral(red: 0.8528290579, green: 0.7291803326, blue: 0.9085828, alpha: 1)
-        let bgFive = #colorLiteral(red: 0.9922662907, green: 0.8697678968, blue: 1, alpha: 1)
-        let bgSix = #colorLiteral(red: 1, green: 0.887721378, blue: 0.8824532881, alpha: 1)
+        let bgOne = #colorLiteral(red: 0.7965814743, green: 0.9438976794, blue: 0.8768362138, alpha: 1)
+        let bgTwo = #colorLiteral(red: 0.8250316994, green: 1, blue: 0.9969279025, alpha: 1)
+        let bgThree = #colorLiteral(red: 0.8424793124, green: 0.9263140529, blue: 0.9921079278, alpha: 1)
+        let bgFour = #colorLiteral(red: 0.8441429012, green: 0.8906594449, blue: 0.9921079278, alpha: 1)
+        let bgFive = #colorLiteral(red: 0.8695143898, green: 0.8501115545, blue: 0.9921079278, alpha: 1)
+        let bgSix = #colorLiteral(red: 0.916966291, green: 0.8389795417, blue: 1, alpha: 1)
+        let bgSeven = #colorLiteral(red: 1, green: 0.8779939601, blue: 0.9586737484, alpha: 1)
         
         let mainFont = UIFont(name: "Avenir-Black", size: 30)!
         let descFont = UIFont(name: "Avenir-Medium", size: 17)!
@@ -85,11 +86,11 @@ extension Onboarding: PaperOnboardingDataSource {
         
         onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardFour"), title: "Extra Tips:", description: "When using a flashcard, click the checkmark if you remembered the information correctly, and click the x mark if you did not!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgFour, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
-        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardFive"), title: "Extra Tips: pt.2", description: "A dot next to each flashcard marks which topics to spend more time on!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgFour, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
+        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardFive"), title: "Extra Tips: pt.2", description: "A dot next to each flashcard marks which topics to spend more time on!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgFive, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
-        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "x-mark"), title: "Extra Tips: pt.3", description: "Once you make a study set, long hold on the screen to see how much you've studied a set that week!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgFive, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
+        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardSix"), title: "Extra Tips: pt.3", description: "Once you make a study set, long hold on the screen to see how much you've studied a set that week!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgSix, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
-        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardSeven"), title: "Let's do this!", description: "", pageIcon: #imageLiteral(resourceName: "dot"), color: bgSix, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
+        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardSeven"), title: "Let's do this!", description: "", pageIcon: #imageLiteral(resourceName: "dot"), color: bgSeven, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
         return onboardingViews[index]
         }
