@@ -33,7 +33,7 @@ public struct OnboardingItemInfo {
         self.descriptionFont = descriptionFont
         self.descriptionLabelPadding = descriptionLabelPadding
         self.titleLabelPadding = titleLabelPadding
-    }
+    }    
 }
 
 /// An instance of PaperOnboarding which display collection of information.

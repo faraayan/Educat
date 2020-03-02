@@ -108,6 +108,7 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
         super.viewDidLoad()
         if isSavedFolder == false{
             createData()
+            button.isHidden = true
         }
         saveData()
         createData()

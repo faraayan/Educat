@@ -529,7 +529,7 @@
                         <viewLayoutGuide key="safeArea" id="PlM-aX-pBN"/>
                     </view>
                     <connections>
-                        <segue destination="00Y-PW-KYh" kind="show" identifier="toApp" id="zJk-OC-6iw"/>
+                        <segue destination="00Y-PW-KYh" kind="showDetail" identifier="toApp" id="zJk-OC-6iw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4JM-cy-A6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
