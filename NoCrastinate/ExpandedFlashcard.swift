@@ -8,22 +8,18 @@
 
 import UIKit
 var myIndex = 0
+
 class ExpandedFlashcard: UIViewController {
     
     @IBOutlet weak var term: UILabel!
-    
     @IBOutlet weak var def: UILabel!
-    
     @IBOutlet weak var termLabel: UILabel!
-    
     @IBOutlet weak var defLabel: UILabel!
-    
     @IBOutlet weak var rememberLabel: UILabel!
-    
     @IBOutlet weak var defScrollView: UIScrollView!
     @IBOutlet weak var termScrollView: UIScrollView!
-    var isDefHidden = false
     
+    var isDefHidden = false
     var isTermHidden = false
     
     //If not in study mode, display is dismissed. Otherwise, display will continue to show the rest of the flashcards in order.
@@ -34,7 +30,6 @@ class ExpandedFlashcard: UIViewController {
                 resetFlashcardShowAndHide()
                 termLabel.text = flashcardsTerm[whichFolder][whichFlashcard]
                 defLabel.text = flashcardsDef[whichFolder][whichFlashcard]
-                print(whichFlashcard)
             }else{
                 isInStudyMode = false
                 dismiss(animated: true, completion: nil)
@@ -45,20 +40,17 @@ class ExpandedFlashcard: UIViewController {
         }
     }
     
-    //"No" Button
-    
+    //"X" Button
     @IBAction func didNotRemember(_ sender: Any) {
         remembered[whichFolder][whichFlashcard] = -1
         UserDefaults.standard.set(remembered, forKey: "remembered")
-        print(remembered)
         toNextFlashcard()
     }
     
-    
+    //checkmark Button
     @IBAction func didRemember(_ sender: Any) {
         remembered[whichFolder][whichFlashcard] = 1
         UserDefaults.standard.set(remembered, forKey: "remembered")
-        print(remembered)
         toNextFlashcard()
     }
     
@@ -91,11 +83,10 @@ class ExpandedFlashcard: UIViewController {
         isTermHidden = false
     
         defScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: defLabel.bottomAnchor).isActive = true
-    defScrollView.isScrollEnabled = false
-    
-    termScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: termLabel.bottomAnchor).isActive = true
-    termScrollView.isScrollEnabled = true
-
+        defScrollView.isScrollEnabled = false
+        
+        termScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: termLabel.bottomAnchor).isActive = true
+        termScrollView.isScrollEnabled = true
     }
     
     //Resets the settings for showing the term/definition
@@ -145,6 +136,5 @@ class ExpandedFlashcard: UIViewController {
             termLabel.backgroundColor = UIColor(named: "flipColorFront")
             isTermHidden = false
         }
-        
     }
 }

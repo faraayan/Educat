@@ -10,10 +10,6 @@
 import UIKit
 class Analytics: UIViewController{
     
-    var termsMissed = 0
-    var charCount = 0
-    var avgCharCount = 0.0
-
     @IBOutlet weak var introLabel: UILabel!
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var studyLabel: UILabel!
@@ -21,6 +17,10 @@ class Analytics: UIViewController{
     @IBOutlet weak var percentofMasteryLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var percentLabel: UILabel!
+    
+    var termsMissed = 0
+    var charCount = 0
+    var avgCharCount = 0.0
     
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -38,12 +38,12 @@ class Analytics: UIViewController{
         let daysCountingMonth = (month-flashcardsMonthCreated[whichFolder])*30
         let daysCountingDay = day-flashcardsDayCreated[whichFolder]
         var daysSinceCreation = daysCountingYear + daysCountingMonth + daysCountingDay
+        
         for element in remembered[whichFolder]{
             if element == -1{
                 termsMissed+=1
             }else if element == 0{
                 termsMissed+=1
-                
             }
         }
         for definition in flashcardsDef[whichFolder] {

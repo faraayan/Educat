@@ -40,6 +40,7 @@ class DailyLog: UIViewController {
         pressed = false
         dismiss(animated: true, completion: nil)
     }
+    
     func boolToText(_ hasReviewed: Bool)-> String{
         if hasReviewed == true{
             return "■"
@@ -89,6 +90,7 @@ class DailyLog: UIViewController {
             return sunday
         }
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         for i in 0 ... 6{

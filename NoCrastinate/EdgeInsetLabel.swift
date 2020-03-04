@@ -8,6 +8,8 @@
 
 import UIKit
 @IBDesignable
+
+//Used to create borders around labels
 class EdgeInsetLabel: UILabel {
     var textInsets = UIEdgeInsets.zero {
         didSet { invalidateIntrinsicContentSize() }

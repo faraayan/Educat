@@ -22,7 +22,6 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBAction func longPressForDailyLog(_ sender: Any) {
         if pressed == false{
-            print("thisRan!")
             performSegue(withIdentifier: "toDailyLog", sender: nil)
             pressed = true
         }
@@ -75,9 +74,7 @@ class Flashcards: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(dailyLog)
         dailyLog[whichFolder][getWeekday()-1] = true
-        print(dailyLog)
         flashcardTable.reloadData()
         isInStudyMode = false
         saveData()

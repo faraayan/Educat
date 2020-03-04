@@ -54,16 +54,11 @@ class Onboarding: UIViewController{
     @objc func buttonClicked(sender : UIButton){
         completeOnboarding = true
         UserDefaults.standard.set(completeOnboarding, forKey: "completeOnboarding")
-        print(UserDefaults.standard.value(forKey: "completeOnboarding") as? Bool? as Any)
         performSegue(withIdentifier: "toApp", sender: nil)
     }
-
-
 }
 
-    
-
-
+//Set content for onboarding screen
 extension Onboarding: PaperOnboardingDataSource {
     func onboardingItem(at index: Int) -> OnboardingItemInfo {
         let bgOne = #colorLiteral(red: 0.7965814743, green: 0.9438976794, blue: 0.8768362138, alpha: 1)
@@ -77,7 +72,7 @@ extension Onboarding: PaperOnboardingDataSource {
         let mainFont = UIFont(name: "Avenir-Black", size: 30)!
         let descFont = UIFont(name: "Avenir-Medium", size: 17)!
         var onboardingViews: [OnboardingItemInfo] = []
-        print("SYKE")
+        
         onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "Checkmark"), title: "Welcome!", description: "NoCrastinate is an app to help you learn more efficiently. \n\n(Swipe left and right!)", pageIcon: #imageLiteral(resourceName: "dot"), color: bgOne, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
         onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardTwoTwo"), title: "The Forgetting Curve", description: "The forgetting curve displays patterns of human memory. Following this information can help the brain memorize information more effectively! \n\nNoCrastinate uses the forgetting curve to make studying as time-efficient as possible!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgTwo, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
@@ -94,7 +89,7 @@ extension Onboarding: PaperOnboardingDataSource {
         return onboardingViews[index]
         }
     
-    //how many onboarding screens
+    //How many onboarding screens
     func onboardingItemsCount() -> Int {
         return 7
     }

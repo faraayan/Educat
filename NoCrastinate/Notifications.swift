@@ -9,22 +9,20 @@
 import UIKit
 import UserNotifications
 
-
 class Notifications: UIViewController {
+    
     @IBOutlet weak var studyLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet weak var pastNotificationSetting: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBAction func cancelNotification(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBOutlet weak var pastNotificationSetting: UILabel!
-    
     @IBAction func saveNotificationTime(_ sender: Any){
         let center = UNUserNotificationCenter.current()
-        
+
         //Notification message
         let content = UNMutableNotificationContent()
         content.title = "Let's review!"
@@ -61,14 +59,12 @@ class Notifications: UIViewController {
     }
 
     override func viewDidLoad(){
-        print("Ran here")
         super.viewDidLoad()
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
         }
-        print("Ran")
-        print(notificationTime)
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if notificationTime.count>1{
@@ -80,8 +76,5 @@ class Notifications: UIViewController {
         }else{
             pastNotificationSetting.text = ""
         }
-        print(notificationTime)
-        //pastNotificationSetting.text = String(myStringArr[0])
     }
-    
 }

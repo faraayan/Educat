@@ -22,9 +22,7 @@ var remembered: [[Int]] = []
 var isSavedFolder = false
 var folderHeaderHeight: CGFloat { 10.0 }
 let foldersNameKey = "foldersName!"
-
 var dailyLog: [[Bool]] = []
-
 var notificationTime: [String] = [""]
 
 func saveData(){
@@ -35,12 +33,9 @@ func saveData(){
     UserDefaults.standard.set(flashcardsDayCreated,forKey:"flashcardDay")
     UserDefaults.standard.set(flashcardsMonthCreated,forKey:"flashcardMonth")
     UserDefaults.standard.set(flashcardsYearCreated,forKey:"flashcardYear")
-    
     UserDefaults.standard.set(dailyLog, forKey: "dailyLog")
-    
     UserDefaults.standard.set(notificationTime, forKey: "notificationTime")
 }
-
 
 func createData(){
     foldersName = UserDefaults.standard.object(forKey: foldersNameKey) as? [String] ?? []
@@ -83,7 +78,6 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ran")
         folderTable.reloadData()
         
         //reset dailyLog if it's monday
@@ -95,6 +89,7 @@ class Folders: UIViewController, UITableViewDelegate, UITableViewDataSource{
                     }
                 }
             }
+            
             UserDefaults.standard.set(dailyLog, forKey: "dailyLog")
         }
     }

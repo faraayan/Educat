@@ -42,7 +42,6 @@ class AddFolder: UIViewController, UITextFieldDelegate {
             for _ in 1...7{
                 dailyLog[whichFolder].append(false)
             }
-            print(dailyLog)
             saveData()
             let date = Date()
             let calendar = Calendar.current
