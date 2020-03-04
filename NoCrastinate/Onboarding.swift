@@ -11,7 +11,9 @@ import UIKit
 import paper_onboarding
 
 var completeOnboarding: Bool = false
-let button = UIButton(frame: CGRect(x: 270, y: 80, width: 80, height: 50))
+let screenRect = UIScreen.main.bounds
+let screenWidth = screenRect.size.width
+let button = UIButton(frame: CGRect(x: screenWidth-100, y: 60, width: 80, height: 50))
 
 class Onboarding: UIViewController{
     override func viewDidAppear(_ animated: Bool) {
