@@ -63,13 +63,13 @@ class Onboarding: UIViewController{
 //Set content for onboarding screen
 extension Onboarding: PaperOnboardingDataSource {
     func onboardingItem(at index: Int) -> OnboardingItemInfo {
-        let bgOne = #colorLiteral(red: 0.9571279415, green: 0.9797350888, blue: 0.9580810356, alpha: 1)
-        let bgTwo = #colorLiteral(red: 0.9114294381, green: 0.9809204033, blue: 0.9893321701, alpha: 1)
-        let bgThree = #colorLiteral(red: 0.8424793124, green: 0.9263140529, blue: 0.9921079278, alpha: 1)
-        let bgFour = #colorLiteral(red: 0.8441429012, green: 0.8906594449, blue: 0.9921079278, alpha: 1)
-        let bgFive = #colorLiteral(red: 0.8695143898, green: 0.8501115545, blue: 0.9921079278, alpha: 1)
-        let bgSix = #colorLiteral(red: 0.916966291, green: 0.8389795417, blue: 1, alpha: 1)
-        let bgSeven = #colorLiteral(red: 1, green: 0.8779939601, blue: 0.9586737484, alpha: 1)
+        let bgOne = UIColor(named:"onboardOneColor")!
+        let bgTwo = UIColor(named:"onboardTwoColor")!
+        let bgThree = UIColor(named:"onboardThreeColor")!
+        let bgFour = UIColor(named:"onboardFourColor")!
+        let bgFive = UIColor(named:"onboardFiveColor")!
+        let bgSix = UIColor(named:"onboardSixColor")!
+        let bgSeven = UIColor(named:"onboardSevenColor")!
         
         let mainFont = UIFont(name: "Avenir-Black", size: 30)!
         let descFont = UIFont(name: "Avenir-Medium", size: 17)!
