@@ -1,6 +1,6 @@
 //
 //  DailyLog.swift
-//  NoCrastinate
+//  Educat
 //
 //  Created by Fara Yan on 2/25/20.
 //  Copyright © 2020 Fara Yan. All rights reserved.

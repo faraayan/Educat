@@ -1,7 +1,6 @@
-
 //
 //  Analytics.swift
-//  NoCrastinate
+//  Educat
 //
 //  Created by Fara Yan on 10/31/19.
 //  Copyright © 2019 Fara Yan. All rights reserved.

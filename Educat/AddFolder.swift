@@ -1,6 +1,6 @@
 //
 //  AddFolder.swift
-//  NoCrastinate
+//  Educat
 //
 //  Created by Fara Yan on 10/28/19.
 //  Copyright © 2019 Fara Yan. All rights reserved.

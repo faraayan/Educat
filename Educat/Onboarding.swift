@@ -1,6 +1,6 @@
 //
 //  Onboarding.swift
-//  NoCrastinate
+//  Educat
 //
 //  Created by Fara Yan on 2/29/20.
 //  Copyright © 2020 Fara Yan. All rights reserved.
@@ -75,11 +75,11 @@ extension Onboarding: PaperOnboardingDataSource {
         let descFont = UIFont(name: "Avenir-Medium", size: 17)!
         var onboardingViews: [OnboardingItemInfo] = []
         
-        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "Checkmark"), title: "Welcome!", description: "NoCrastinate is an app to help you learn more efficiently. \n\n(Swipe left and right!)", pageIcon: #imageLiteral(resourceName: "dot"), color: bgOne, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
+        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "Checkmark"), title: "Welcome!", description: "Educat is an app to help you learn more efficiently. \n\n(Swipe left and right!)", pageIcon: #imageLiteral(resourceName: "dot"), color: bgOne, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
-        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardTwoTwo"), title: "The Forgetting Curve", description: "The forgetting curve displays patterns of human memory. Following this information can help the brain memorize information more effectively! \n\nNoCrastinate uses the forgetting curve to make studying as time-efficient as possible!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgTwo, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
+        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardTwoTwo"), title: "The Forgetting Curve", description: "The forgetting curve displays patterns of human memory. Following this information can help the brain memorize information more effectively! \n\nEducat uses the forgetting curve to make studying as time-efficient as possible!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgTwo, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
-        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardThree"), title: "Analytics", description: "NoCrastinate includes an Analytics page in the app, where it takes the folder length, words, and time spent on a study set into account to compute a recommended study time!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgThree, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
+        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardThree"), title: "Analytics", description: "Educat includes an Analytics page in the app, where it takes the folder length, words, and time spent on a study set into account to compute a recommended study time!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgThree, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
         onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardFour"), title: "Extra Tips:", description: "When using a flashcard, click the checkmark if you remembered the information correctly, and click the " + "\"" + "x" + "\"" + " mark if you did not!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgFour, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
