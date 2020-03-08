@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0D88D03ED76CF546AA0FDF9F /* Pods-Educat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Educat.release.xcconfig"; path = "Target Support Files/Pods-Educat/Pods-Educat.release.xcconfig"; sourceTree = "<group>"; };
-		182CFCAE7B5280A9BC293B2B /* Pods_EducatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EducatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		182CFCAE7B5280A9BC293B2B /* Pods_EducatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EducatTests.framework; path = "../../../../Educat-ctnxnmqxauvlvnafajdzjssvhumu/Build/Products/Debug-iphonesimulator/Pods_EducatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF06DE2F3128CC063FDEAEA /* Pods-EducatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducatTests.debug.xcconfig"; path = "Target Support Files/Pods-EducatTests/Pods-EducatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B3EB8B66F5491B7C105191E /* Pods-EducatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducatTests.release.xcconfig"; path = "Target Support Files/Pods-EducatTests/Pods-EducatTests.release.xcconfig"; sourceTree = "<group>"; };
 		41056F882366E51E00A57676 /* Folders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folders.swift; sourceTree = "<group>"; };
@@ -526,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fara.Educat-StayProductive";
+				PRODUCT_BUNDLE_IDENTIFIER = "fara.Educat-StayProductiveApp";
 				PRODUCT_NAME = Educat;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -550,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fara.Educat-StayProductive";
+				PRODUCT_BUNDLE_IDENTIFIER = "fara.Educat-StayProductiveApp";
 				PRODUCT_NAME = Educat;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
