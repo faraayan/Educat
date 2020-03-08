@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1110"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "419D98FF236619FC00E4E6C9"
-               BuildableName = "NoCrastinate.app"
-               BlueprintName = "NoCrastinate"
-               ReferencedContainer = "container:NoCrastinate.xcodeproj">
+               BlueprintIdentifier = "4574080EC2879D59C1AA6D8A2098934F"
+               BuildableName = "Pods_Educat.framework"
+               BlueprintName = "Pods-Educat"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "419D98FF236619FC00E4E6C9"
-            BuildableName = "NoCrastinate.app"
-            BlueprintName = "NoCrastinate"
-            ReferencedContainer = "container:NoCrastinate.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "419D98FF236619FC00E4E6C9"
-            BuildableName = "NoCrastinate.app"
-            BlueprintName = "NoCrastinate"
-            ReferencedContainer = "container:NoCrastinate.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -24,8 +24,9 @@
 		419D9910236619FF00E4E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419D990E236619FF00E4E6C9 /* LaunchScreen.storyboard */; };
 		419D992623661B0400E4E6C9 /* AddFlashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D992523661B0400E4E6C9 /* AddFlashcard.swift */; };
 		41D46C35236BC11000BB3803 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D46C34236BC11000BB3803 /* Analytics.swift */; };
-		57B417043185A0CF18ABE642 /* Pods_NoCrastinateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A068BED955846B884F92952 /* Pods_NoCrastinateTests.framework */; };
-		7D135157FAE306113CAF2741 /* Pods_NoCrastinate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2215F08180F6C9188F88F34 /* Pods_NoCrastinate.framework */; };
+		7D135157FAE306113CAF2741 /* paper_onboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2215F08180F6C9188F88F34 /* paper_onboarding.framework */; };
+		C01CC1D1176764BFDCF77D11 /* Pods_EducatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182CFCAE7B5280A9BC293B2B /* Pods_EducatTests.framework */; };
+		E13773C837CE7831D1DB83C1 /* Pods_Educat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC45C4F5320F11409D7F4ED /* Pods_Educat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D88D03ED76CF546AA0FDF9F /* Pods-NoCrastinate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoCrastinate.release.xcconfig"; path = "Target Support Files/Pods-NoCrastinate/Pods-NoCrastinate.release.xcconfig"; sourceTree = "<group>"; };
-		2DF06DE2F3128CC063FDEAEA /* Pods-NoCrastinateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoCrastinateTests.debug.xcconfig"; path = "Target Support Files/Pods-NoCrastinateTests/Pods-NoCrastinateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B3EB8B66F5491B7C105191E /* Pods-NoCrastinateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoCrastinateTests.release.xcconfig"; path = "Target Support Files/Pods-NoCrastinateTests/Pods-NoCrastinateTests.release.xcconfig"; sourceTree = "<group>"; };
+		0D88D03ED76CF546AA0FDF9F /* Pods-Educat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Educat.release.xcconfig"; path = "Target Support Files/Pods-Educat/Pods-Educat.release.xcconfig"; sourceTree = "<group>"; };
+		182CFCAE7B5280A9BC293B2B /* Pods_EducatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EducatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF06DE2F3128CC063FDEAEA /* Pods-EducatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducatTests.debug.xcconfig"; path = "Target Support Files/Pods-EducatTests/Pods-EducatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B3EB8B66F5491B7C105191E /* Pods-EducatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducatTests.release.xcconfig"; path = "Target Support Files/Pods-EducatTests/Pods-EducatTests.release.xcconfig"; sourceTree = "<group>"; };
 		41056F882366E51E00A57676 /* Folders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folders.swift; sourceTree = "<group>"; };
 		41056F8A2366E5D700A57676 /* AddFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolder.swift; sourceTree = "<group>"; };
 		410E177D240B87640033FF57 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
@@ -53,19 +55,19 @@
 		417DE8912404C7E700891445 /* ios_marketing1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_marketing1024x1024.png; sourceTree = "<group>"; };
 		418514E92406137A00812D1D /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
 		4186898324036B9600297E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		419D9900236619FC00E4E6C9 /* NoCrastinate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoCrastinate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		419D9900236619FC00E4E6C9 /* Educat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Educat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419D9903236619FC00E4E6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419D9905236619FC00E4E6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		419D9907236619FC00E4E6C9 /* Flashcards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcards.swift; sourceTree = "<group>"; };
 		419D990F236619FF00E4E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419D9911236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419D9916236619FF00E4E6C9 /* NoCrastinateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoCrastinateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		419D9916236619FF00E4E6C9 /* Educat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Educat.app; path = "../../../../Educat-ctnxnmqxauvlvnafajdzjssvhumu/Build/Products/Debug-iphonesimulator/Educat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419D991C236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419D992523661B0400E4E6C9 /* AddFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcard.swift; sourceTree = "<group>"; };
 		41D46C34236BC11000BB3803 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
-		81BBB65D94DFEB35D9DBCB63 /* Pods-NoCrastinate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoCrastinate.debug.xcconfig"; path = "Target Support Files/Pods-NoCrastinate/Pods-NoCrastinate.debug.xcconfig"; sourceTree = "<group>"; };
-		9A068BED955846B884F92952 /* Pods_NoCrastinateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoCrastinateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2215F08180F6C9188F88F34 /* Pods_NoCrastinate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoCrastinate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BBB65D94DFEB35D9DBCB63 /* Pods-Educat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Educat.debug.xcconfig"; path = "Target Support Files/Pods-Educat/Pods-Educat.debug.xcconfig"; sourceTree = "<group>"; };
+		CBC45C4F5320F11409D7F4ED /* Pods_Educat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Educat.framework; path = "../../../../Educat-ctnxnmqxauvlvnafajdzjssvhumu/Build/Products/Debug-iphonesimulator/Pods_Educat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2215F08180F6C9188F88F34 /* paper_onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = paper_onboarding.framework; path = "../../../../Educat-ctnxnmqxauvlvnafajdzjssvhumu/Build/Products/Debug-iphonesimulator/paper_onboarding.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D135157FAE306113CAF2741 /* Pods_NoCrastinate.framework in Frameworks */,
+				7D135157FAE306113CAF2741 /* paper_onboarding.framework in Frameworks */,
+				E13773C837CE7831D1DB83C1 /* Pods_Educat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B417043185A0CF18ABE642 /* Pods_NoCrastinateTests.framework in Frameworks */,
+				C01CC1D1176764BFDCF77D11 /* Pods_EducatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +94,8 @@
 		419D98F7236619FC00E4E6C9 = {
 			isa = PBXGroup;
 			children = (
-				419D9902236619FC00E4E6C9 /* NoCrastinate */,
-				419D9919236619FF00E4E6C9 /* NoCrastinateTests */,
+				419D9902236619FC00E4E6C9 /* Educat */,
+				419D9919236619FF00E4E6C9 /* EducatTests */,
 				419D9901236619FC00E4E6C9 /* Products */,
 				C76B0213218E610C432E4B72 /* Pods */,
 				B95B68095EC426873F28E676 /* Frameworks */,
@@ -102,13 +105,13 @@
 		419D9901236619FC00E4E6C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				419D9900236619FC00E4E6C9 /* NoCrastinate.app */,
-				419D9916236619FF00E4E6C9 /* NoCrastinateTests.xctest */,
+				419D9900236619FC00E4E6C9 /* Educat.app */,
+				419D9916236619FF00E4E6C9 /* Educat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		419D9902236619FC00E4E6C9 /* NoCrastinate */ = {
+		419D9902236619FC00E4E6C9 /* Educat */ = {
 			isa = PBXGroup;
 			children = (
 				412E4BE1240227F2009149B1 /* Main.storyboard */,
@@ -130,15 +133,15 @@
 				41C6F34A240364D400BC9615 /* Images */,
 				419D9911236619FF00E4E6C9 /* Info.plist */,
 			);
-			path = NoCrastinate;
+			path = Educat;
 			sourceTree = "<group>";
 		};
-		419D9919236619FF00E4E6C9 /* NoCrastinateTests */ = {
+		419D9919236619FF00E4E6C9 /* EducatTests */ = {
 			isa = PBXGroup;
 			children = (
 				419D991C236619FF00E4E6C9 /* Info.plist */,
 			);
-			path = NoCrastinateTests;
+			path = EducatTests;
 			sourceTree = "<group>";
 		};
 		41C6F34A240364D400BC9615 /* Images */ = {
@@ -152,8 +155,9 @@
 		B95B68095EC426873F28E676 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F2215F08180F6C9188F88F34 /* Pods_NoCrastinate.framework */,
-				9A068BED955846B884F92952 /* Pods_NoCrastinateTests.framework */,
+				F2215F08180F6C9188F88F34 /* paper_onboarding.framework */,
+				CBC45C4F5320F11409D7F4ED /* Pods_Educat.framework */,
+				182CFCAE7B5280A9BC293B2B /* Pods_EducatTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,10 +165,10 @@
 		C76B0213218E610C432E4B72 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				81BBB65D94DFEB35D9DBCB63 /* Pods-NoCrastinate.debug.xcconfig */,
-				0D88D03ED76CF546AA0FDF9F /* Pods-NoCrastinate.release.xcconfig */,
-				2DF06DE2F3128CC063FDEAEA /* Pods-NoCrastinateTests.debug.xcconfig */,
-				3B3EB8B66F5491B7C105191E /* Pods-NoCrastinateTests.release.xcconfig */,
+				81BBB65D94DFEB35D9DBCB63 /* Pods-Educat.debug.xcconfig */,
+				0D88D03ED76CF546AA0FDF9F /* Pods-Educat.release.xcconfig */,
+				2DF06DE2F3128CC063FDEAEA /* Pods-EducatTests.debug.xcconfig */,
+				3B3EB8B66F5491B7C105191E /* Pods-EducatTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -172,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		419D98FF236619FC00E4E6C9 /* NoCrastinate */ = {
+		419D98FF236619FC00E4E6C9 /* Educat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinate" */;
+			buildConfigurationList = 419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "Educat" */;
 			buildPhases = (
 				C36E4F57311F8589FE200E14 /* [CP] Check Pods Manifest.lock */,
 				419D98FC236619FC00E4E6C9 /* Sources */,
@@ -186,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = NoCrastinate;
+			name = Educat;
 			productName = CleverStudy;
-			productReference = 419D9900236619FC00E4E6C9 /* NoCrastinate.app */;
+			productReference = 419D9900236619FC00E4E6C9 /* Educat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		419D9915236619FF00E4E6C9 /* NoCrastinateTests */ = {
+		419D9915236619FF00E4E6C9 /* EducatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinateTests" */;
+			buildConfigurationList = 419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "EducatTests" */;
 			buildPhases = (
 				9DEDB9F6C05A774A8DD38F09 /* [CP] Check Pods Manifest.lock */,
 				419D9912236619FF00E4E6C9 /* Sources */,
@@ -205,9 +209,9 @@
 			dependencies = (
 				419D9918236619FF00E4E6C9 /* PBXTargetDependency */,
 			);
-			name = NoCrastinateTests;
+			name = EducatTests;
 			productName = CleverStudyTests;
-			productReference = 419D9916236619FF00E4E6C9 /* NoCrastinateTests.xctest */;
+			productReference = 419D9916236619FF00E4E6C9 /* Educat.app */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "NoCrastinate" */;
+			buildConfigurationList = 419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "Educat" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -242,8 +246,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				419D98FF236619FC00E4E6C9 /* NoCrastinate */,
-				419D9915236619FF00E4E6C9 /* NoCrastinateTests */,
+				419D98FF236619FC00E4E6C9 /* Educat */,
+				419D9915236619FF00E4E6C9 /* EducatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,7 +289,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoCrastinateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EducatTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -298,15 +302,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoCrastinate/Pods-NoCrastinate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Educat/Pods-Educat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoCrastinate/Pods-NoCrastinate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Educat/Pods-Educat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoCrastinate/Pods-NoCrastinate-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Educat/Pods-Educat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C36E4F57311F8589FE200E14 /* [CP] Check Pods Manifest.lock */ = {
@@ -324,7 +328,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoCrastinate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Educat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -366,7 +370,7 @@
 /* Begin PBXTargetDependency section */
 		419D9918236619FF00E4E6C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 419D98FF236619FC00E4E6C9 /* NoCrastinate */;
+			target = 419D98FF236619FC00E4E6C9 /* Educat */;
 			targetProxy = 419D9917236619FF00E4E6C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -509,20 +513,21 @@
 		};
 		419D9920236619FF00E4E6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81BBB65D94DFEB35D9DBCB63 /* Pods-NoCrastinate.debug.xcconfig */;
+			baseConfigurationReference = 81BBB65D94DFEB35D9DBCB63 /* Pods-Educat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKLQ3NNXMK;
-				INFOPLIST_FILE = "$(SRCROOT)/NoCrastinate/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Educat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fara.NoCrastinate;
-				PRODUCT_NAME = NoCrastinate;
+				PRODUCT_BUNDLE_IDENTIFIER = fara.Educat;
+				PRODUCT_NAME = Educat;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -531,20 +536,22 @@
 		};
 		419D9921236619FF00E4E6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D88D03ED76CF546AA0FDF9F /* Pods-NoCrastinate.release.xcconfig */;
+			baseConfigurationReference = 0D88D03ED76CF546AA0FDF9F /* Pods-Educat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKLQ3NNXMK;
-				INFOPLIST_FILE = "$(SRCROOT)/NoCrastinate/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Educat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fara.NoCrastinate;
-				PRODUCT_NAME = NoCrastinate;
+				PRODUCT_BUNDLE_IDENTIFIER = fara.Educat;
+				PRODUCT_NAME = Educat;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -553,7 +560,7 @@
 		};
 		419D9923236619FF00E4E6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DF06DE2F3128CC063FDEAEA /* Pods-NoCrastinateTests.debug.xcconfig */;
+			baseConfigurationReference = 2DF06DE2F3128CC063FDEAEA /* Pods-EducatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,13 +576,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoCrastinate.app/NoCrastinate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Educat.app/Educat";
 			};
 			name = Debug;
 		};
 		419D9924236619FF00E4E6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B3EB8B66F5491B7C105191E /* Pods-NoCrastinateTests.release.xcconfig */;
+			baseConfigurationReference = 3B3EB8B66F5491B7C105191E /* Pods-EducatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -591,14 +598,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoCrastinate.app/NoCrastinate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Educat.app/Educat";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "NoCrastinate" */ = {
+		419D98FB236619FC00E4E6C9 /* Build configuration list for PBXProject "Educat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419D991D236619FF00E4E6C9 /* Debug */,
@@ -607,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinate" */ = {
+		419D991F236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "Educat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419D9920236619FF00E4E6C9 /* Debug */,
@@ -616,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "NoCrastinateTests" */ = {
+		419D9922236619FF00E4E6C9 /* Build configuration list for PBXNativeTarget "EducatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419D9923236619FF00E4E6C9 /* Debug */,

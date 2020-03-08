@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_NoCrastinateVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_NoCrastinateVersionString[];
+FOUNDATION_EXPORT double Pods_EducatTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_EducatTestsVersionString[];
 

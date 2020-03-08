@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-NoCrastinate.xcscheme</key>
+		<key>Pods-Educat.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-NoCrastinateTests.xcscheme</key>
+		<key>Pods-EducatTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
