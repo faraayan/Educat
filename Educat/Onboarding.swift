@@ -75,7 +75,7 @@ extension Onboarding: PaperOnboardingDataSource {
         let descFont = UIFont(name: "Avenir-Medium", size: 17)!
         var onboardingViews: [OnboardingItemInfo] = []
         
-        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "Checkmark"), title: "Welcome!", description: "Educat is an app to help you learn more efficiently. \n\n(Swipe left and right!)", pageIcon: #imageLiteral(resourceName: "dot"), color: bgOne, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
+        onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "Transparent"), title: "Welcome!", description: "Educat is an app to help you learn more efficiently. \n\n(Swipe left and right!)", pageIcon: #imageLiteral(resourceName: "dot"), color: bgOne, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         
         onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "onboardTwoTwo"), title: "The Forgetting Curve", description: "The forgetting curve displays patterns of human memory. Following this information can help the brain memorize information more effectively! \n\nEducat uses the forgetting curve to make studying as time-efficient as possible!", pageIcon: #imageLiteral(resourceName: "dot"), color: bgTwo, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         

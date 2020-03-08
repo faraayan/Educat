@@ -16,18 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOCRASTINATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-c5-X6w">
-                                <rect key="frame" x="141.5" y="759.5" width="131" height="23.5"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <color key="textColor" name="expandedFlashcardColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios_marketing1024x1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-zX-W3p">
                                 <rect key="frame" x="34" y="166" width="346" height="283"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="283" id="4TR-zA-sW1"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDUCAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-c5-X6w">
+                                <rect key="frame" x="156.5" y="759" width="101" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cb5-c5-X6w" secondAttribute="height" multiplier="101:24" id="cer-tj-NyS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="textColor" name="expandedFlashcardColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="NoCrastinateColor"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,6 +40,7 @@
                             <constraint firstItem="eWo-zX-W3p" firstAttribute="centerX" secondItem="cb5-c5-X6w" secondAttribute="centerX" id="bKd-oA-PTc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cb5-c5-X6w" secondAttribute="bottom" constant="79" id="dSE-Sg-XQU"/>
                             <constraint firstItem="eWo-zX-W3p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="eJC-yu-xT2"/>
+                            <constraint firstItem="cb5-c5-X6w" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="re0-62-vui"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
