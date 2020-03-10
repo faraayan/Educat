@@ -47,7 +47,6 @@
 		419D9907236619FC00E4E6C9 /* Flashcards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcards.swift; sourceTree = "<group>"; };
 		419D990F236619FF00E4E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419D9911236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419D991C236619FF00E4E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419D992523661B0400E4E6C9 /* AddFlashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcard.swift; sourceTree = "<group>"; };
 		41D46C34236BC11000BB3803 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		81BBB65D94DFEB35D9DBCB63 /* Pods-Educat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Educat.debug.xcconfig"; path = "Target Support Files/Pods-Educat/Pods-Educat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				419D9902236619FC00E4E6C9 /* Educat */,
-				419D9919236619FF00E4E6C9 /* EducatTests */,
 				419D9901236619FC00E4E6C9 /* Products */,
 				C76B0213218E610C432E4B72 /* Pods */,
 				B95B68095EC426873F28E676 /* Frameworks */,
@@ -110,14 +108,6 @@
 				419D9911236619FF00E4E6C9 /* Info.plist */,
 			);
 			path = Educat;
-			sourceTree = "<group>";
-		};
-		419D9919236619FF00E4E6C9 /* EducatTests */ = {
-			isa = PBXGroup;
-			children = (
-				419D991C236619FF00E4E6C9 /* Info.plist */,
-			);
-			path = EducatTests;
 			sourceTree = "<group>";
 		};
 		41C6F34A240364D400BC9615 /* Images */ = {
