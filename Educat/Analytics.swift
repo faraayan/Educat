@@ -27,7 +27,6 @@ class Analytics: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("view ran")
         introLabel.text = "Mastery understanding of " + foldersName[whichFolder]
         let date = Date()
         let calendar = Calendar.current
@@ -63,14 +62,6 @@ class Analytics: UIViewController{
         let minToRead = Double(charCount)/600
         let additionalMinToRead = Double(termsMissed)*(avgCharCount/Double(600))
         let numOfMinutes = round(Double(numOfRepititions * minToRead + additionalMinToRead)*Double(100.0))
-        print("numOfRepititions")
-        print(numOfRepititions)
-        print("minToRead")
-        print(minToRead)
-        print("additionalMinToRead")
-        print(additionalMinToRead)
-        print("numOfMinutes")
-        print(numOfMinutes)
         if (numOfMinutes / 100).isNaN{
             recTimeLabel.text = "0.00"
         }
