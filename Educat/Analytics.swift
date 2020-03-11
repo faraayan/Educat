@@ -27,6 +27,7 @@ class Analytics: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        print("ran")
         introLabel.text = "Mastery understanding of " + foldersName[whichFolder]
         let date = Date()
         let calendar = Calendar.current
@@ -38,6 +39,9 @@ class Analytics: UIViewController{
         let daysCountingDay = day-flashcardsDayCreated[whichFolder]
         var daysSinceCreation = daysCountingYear + daysCountingMonth + daysCountingDay
         
+        termsMissed = 0
+        charCount = 0
+        avgCharCount = 0.0
         for element in remembered[whichFolder]{
             if element == -1{
                 termsMissed+=1
@@ -45,7 +49,6 @@ class Analytics: UIViewController{
                 termsMissed+=1
             }
         }
-        charCount = 0
         for definition in flashcardsDef[whichFolder] {
             charCount += definition.count
         }
@@ -74,6 +77,14 @@ class Analytics: UIViewController{
         }else{
             percentofMasteryLabel.text = "0"
         }
+        print("numOfRepititions")
+        print(numOfRepititions)
+        print("minToRead")
+        print(minToRead)
+        print("additionalMinToRead")
+        print(additionalMinToRead)
+        print("numOfMinutes")
+        print(numOfMinutes)
         
     }
     override func viewDidLoad()
