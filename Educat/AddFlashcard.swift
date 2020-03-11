@@ -1,12 +1,13 @@
  //
 //  AddFlashcard.swift
-//  NoCrastinate
+//  Educat
 //
 //  Created by Fara Yan on 10/27/19.
 //  Copyright © 2019 Fara Yan. All rights reserved.
 //
 
 import UIKit
+import AudioToolbox
 
  class AddFlashcard: UIViewController, UITextFieldDelegate {
     
@@ -21,10 +22,17 @@ import UIKit
         UserDefaults.standard.set(userData, forKey:"userData")
         if termText.text == ""{
             termUnderline.textColor = UIColor.red
+            AudioServicesPlaySystemSound(1519)
+        }else{
+            termUnderline.textColor = UIColor.black
         }
         if definitionText.text == ""{
             definitionUnderline.textColor = UIColor.red
+            AudioServicesPlaySystemSound(1519)
+        }else{
+            definitionUnderline.textColor = UIColor.black
         }
+        
         if termText.text != "" && definitionText.text != ""{
             termUnderline.textColor = UIColor.black
             definitionUnderline.textColor = UIColor.black

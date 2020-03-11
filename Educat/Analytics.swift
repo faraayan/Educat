@@ -38,6 +38,9 @@ class Analytics: UIViewController{
         let daysCountingDay = day-flashcardsDayCreated[whichFolder]
         var daysSinceCreation = daysCountingYear + daysCountingMonth + daysCountingDay
         
+        termsMissed = 0
+        charCount = 0
+        avgCharCount = 0.0
         for element in remembered[whichFolder]{
             if element == -1{
                 termsMissed+=1
@@ -73,8 +76,8 @@ class Analytics: UIViewController{
         }else{
             percentofMasteryLabel.text = "0"
         }
-        
     }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

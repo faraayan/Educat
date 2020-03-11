@@ -7,9 +7,4 @@ target 'Educat' do
 pod 'paper-onboarding'
   # Pods for Educat
 
-  target 'EducatTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

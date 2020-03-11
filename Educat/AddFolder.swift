@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 func createTime(){
     flashcardsDayCreated = UserDefaults.standard.object(forKey: "flashcardDay") as? [Int] ?? []
@@ -31,6 +32,7 @@ class AddFolder: UIViewController, UITextFieldDelegate {
         whichFolder = flashcardsTerm.count
         if folderNameText.text == ""{
             underlineBar.textColor = UIColor.red
+            AudioServicesPlaySystemSound(1519)
         }
         if folderNameText.text != ""{
             underlineBar.textColor = UIColor.black
