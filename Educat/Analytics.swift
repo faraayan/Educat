@@ -27,7 +27,6 @@ class Analytics: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ran")
         introLabel.text = "Mastery understanding of " + foldersName[whichFolder]
         let date = Date()
         let calendar = Calendar.current
@@ -77,16 +76,8 @@ class Analytics: UIViewController{
         }else{
             percentofMasteryLabel.text = "0"
         }
-        print("numOfRepititions")
-        print(numOfRepititions)
-        print("minToRead")
-        print(minToRead)
-        print("additionalMinToRead")
-        print(additionalMinToRead)
-        print("numOfMinutes")
-        print(numOfMinutes)
-        
     }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

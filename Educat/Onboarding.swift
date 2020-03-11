@@ -16,12 +16,14 @@ let screenWidth = screenRect.size.width
 let button = UIButton(frame: CGRect(x: screenWidth-100, y: 60, width: 80, height: 50))
 
 class Onboarding: UIViewController{
+    
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.value(forKey: "completeOnboarding") as? Bool == true{
             performSegue(withIdentifier: "toApp", sender: self)
         }
         super.viewDidAppear(animated)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if UserDefaults.standard.value(forKey: "completeOnboarding") as? Bool == false{
@@ -33,7 +35,7 @@ class Onboarding: UIViewController{
           onboarding.translatesAutoresizingMaskIntoConstraints = false
           view.addSubview(onboarding)
 
-          // add constraints
+        // add constraints
         for attribute: NSLayoutConstraint.Attribute in [.left, .right, .top, .bottom] {
             let constraint = NSLayoutConstraint(item: onboarding,
                                                 attribute: attribute,
@@ -53,6 +55,7 @@ class Onboarding: UIViewController{
             button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
             view.addSubview(button)
     }
+    
     @objc func buttonClicked(sender : UIButton){
         completeOnboarding = true
         UserDefaults.standard.set(completeOnboarding, forKey: "completeOnboarding")
@@ -74,6 +77,7 @@ extension Onboarding: PaperOnboardingDataSource {
         let mainFont = UIFont(name: "Avenir-Black", size: 30)!
         let descFont = UIFont(name: "Avenir-Medium", size: 17)!
         var onboardingViews: [OnboardingItemInfo] = []
+        
         if UserDefaults.standard.value(forKey: "completeOnboarding") as? Bool == true{
             onboardingViews.append(OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "Transparent"), title: "", description: "", pageIcon: #imageLiteral(resourceName: "Transparent"), color: bgOne, titleColor: UIColor(named:"navigationColor")!, descriptionColor: UIColor(named:"navigationColor")!, titleFont: mainFont, descriptionFont: descFont))
         }
