@@ -808,7 +808,7 @@
                                 <rect key="frame" x="58" y="363" width="259" height="243.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="298" translatesAutoresizingMaskIntoConstraints="NO" id="BxG-0y-7m6" customClass="EdgeInsetLabel" customModule="Educat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="259" height="44.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="1" width="259" height="24.333333333333332"/>
                                         <color key="backgroundColor" name="flipColorBack"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
@@ -844,7 +844,7 @@
                                 <rect key="frame" x="58" y="131" width="259" height="124"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="298" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-Ya-5Ij" customClass="EdgeInsetLabel" customModule="Educat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="259" height="44.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="24.333333333333332"/>
                                         <color key="backgroundColor" name="flipColorBack"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
