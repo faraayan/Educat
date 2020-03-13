@@ -51,19 +51,6 @@
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqT-um-udr">
-                                <rect key="frame" x="16" y="44" width="61" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="KqT-um-udr" secondAttribute="height" multiplier="61:59" id="DyE-Em-Efy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
-                                <state key="normal" title="✕">
-                                    <color key="titleColor" name="navigationColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelNotification:" destination="rGK-d8-mhD" eventType="touchUpInside" id="nN2-E9-Lko"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-S2-kWI">
                                 <rect key="frame" x="160.66666666666666" y="575" width="54" height="33"/>
                                 <constraints>
@@ -75,6 +62,19 @@
                                 </state>
                                 <connections>
                                     <action selector="saveNotificationTime:" destination="rGK-d8-mhD" eventType="touchUpInside" id="yMU-as-fhs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqT-um-udr">
+                                <rect key="frame" x="16" y="59" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KqT-um-udr" secondAttribute="height" multiplier="1:1" id="RM2-hk-ziP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" name="navigationColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelNotification:" destination="rGK-d8-mhD" eventType="touchUpInside" id="nN2-E9-Lko"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,6 +94,7 @@
                             <constraint firstItem="wbX-bD-xJO" firstAttribute="top" secondItem="B2b-hA-YDs" secondAttribute="bottom" constant="5.3333333333334849" id="Qj3-qa-7j3"/>
                             <constraint firstItem="B2b-hA-YDs" firstAttribute="top" secondItem="KqT-um-udr" secondAttribute="bottom" constant="8" id="TmB-Cr-Itp"/>
                             <constraint firstItem="wbX-bD-xJO" firstAttribute="top" secondItem="B2b-hA-YDs" secondAttribute="bottom" constant="5.3333333333334849" id="VgB-ni-vDz"/>
+                            <constraint firstItem="KqT-um-udr" firstAttribute="top" secondItem="DxU-d5-Jpa" secondAttribute="top" constant="15" id="Vzp-SK-bef"/>
                             <constraint firstItem="ZCS-Ny-rCy" firstAttribute="top" secondItem="Ca6-bS-6N6" secondAttribute="bottom" constant="16" id="e6P-KT-bMH"/>
                             <constraint firstItem="ZCS-Ny-rCy" firstAttribute="top" secondItem="Ca6-bS-6N6" secondAttribute="bottom" constant="16" id="noU-ZY-Eis"/>
                             <constraint firstItem="Ca6-bS-6N6" firstAttribute="top" secondItem="DxU-d5-Jpa" secondAttribute="top" constant="210" id="pa9-oP-FDM"/>
@@ -807,7 +808,7 @@
                                 <rect key="frame" x="58" y="363" width="259" height="243.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="298" translatesAutoresizingMaskIntoConstraints="NO" id="BxG-0y-7m6" customClass="EdgeInsetLabel" customModule="Educat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="259" height="24.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="1" width="259" height="44.333333333333336"/>
                                         <color key="backgroundColor" name="flipColorBack"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
@@ -843,7 +844,7 @@
                                 <rect key="frame" x="58" y="131" width="259" height="124"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="298" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-Ya-5Ij" customClass="EdgeInsetLabel" customModule="Educat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="259" height="24.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="44.333333333333336"/>
                                         <color key="backgroundColor" name="flipColorBack"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
@@ -981,13 +982,13 @@
                                 <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TsW-BG-anN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="TsW-BG-anN">
                                 <rect key="frame" x="46" y="355" width="276" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-IF-yTG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-IF-yTG">
                                 <rect key="frame" x="46" y="264" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                                 <color key="textColor" name="titleColor"/>
@@ -1010,6 +1011,7 @@
                         <color key="backgroundColor" name="flashcardColor"/>
                         <constraints>
                             <constraint firstItem="pLB-Fi-5pk" firstAttribute="trailing" secondItem="QXc-Js-Pzc" secondAttribute="trailing" constant="1" id="2sg-5T-m8Y"/>
+                            <constraint firstItem="C5j-hG-WWd" firstAttribute="trailing" secondItem="LRZ-Ja-v8D" secondAttribute="trailing" constant="104" id="583-Du-y2b"/>
                             <constraint firstItem="QXc-Js-Pzc" firstAttribute="top" secondItem="Oje-IF-yTG" secondAttribute="bottom" constant="50" id="8qB-vy-YBE"/>
                             <constraint firstItem="s3g-rh-uho" firstAttribute="top" secondItem="C5j-hG-WWd" secondAttribute="top" constant="16" id="BOU-sS-jec"/>
                             <constraint firstItem="s3g-rh-uho" firstAttribute="leading" secondItem="tnS-yP-KWd" secondAttribute="leadingMargin" constant="9" id="BSb-oj-Kyc"/>
